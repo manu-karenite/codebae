@@ -6,8 +6,38 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 200%;
-  color: red; }
+  font-size: 50%; }
 
 body {
   box-sizing: border-box; }
+
+.head {
+  background-color: #120917;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .head .head-brand {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 60%; }
+    .head .head-brand #logo-main {
+      height: 80%;
+      background-size: cover; }
+  .head .wish-time {
+    text-align: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .head .wish-time .wish {
+      font-family: "Heebo", sans-serif;
+      font-size: 5rem;
+      color: #bf7626;
+      letter-spacing: 0.1rem;
+      font-weight: bold; }
+    .head .wish-time .wish {
+      padding: 0.5rem; }
