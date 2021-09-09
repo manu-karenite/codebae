@@ -1,0 +1,15 @@
+.summary {
+  margin: 0 auto;
+  max-width: 114rem;
+  display: block;
+  font-size: 3rem;
+  padding: 5rem 2rem 5rem 2rem;
+  font-family: "Rubik", sans-serif;
+  color: $color-header-bg;
+  .intro-1,
+  .intro-2,
+  .intro-3,
+  .intro-4 {
+    padding-bottom: 2.5rem;
+  }
+}
