@@ -41,3 +41,29 @@ body {
       font-weight: bold; }
     .head .wish-time .wish {
       padding: 0.5rem; }
+
+.summary {
+  margin: 0 auto;
+  max-width: 114rem;
+  display: block;
+  font-size: 3rem;
+  padding: 5rem 2rem 5rem 2rem;
+  font-family: "Rubik", sans-serif;
+  color: #120917; }
+  .summary .intro-1,
+  .summary .intro-2,
+  .summary .intro-3,
+  .summary .intro-4 {
+    padding-bottom: 2.5rem; }
+
+.light-font {
+  color: #bf7626;
+  font-weight: bolder; }
+
+.blue-font {
+  color: blue;
+  font-weight: bolder; }
+
+.green-font {
+  color: green;
+  font-weight: bolder; }
