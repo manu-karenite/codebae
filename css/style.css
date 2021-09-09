@@ -50,6 +50,14 @@ body {
   padding: 5rem 2rem 5rem 2rem;
   font-family: "Rubik", sans-serif;
   color: #120917; }
+  .summary h2 {
+    font-size: 7rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    font-family: "Heebo", sans-serif;
+    color: #120917;
+    font-weight: bolder;
+    letter-spacing: 3px; }
   .summary .intro-1,
   .summary .intro-2,
   .summary .intro-3,
