@@ -1,4 +1,13 @@
 .summary {
+  h2 {
+    font-size: 7rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    font-family: "Heebo", sans-serif;
+    color: $color-header-bg;
+    font-weight: bolder;
+    letter-spacing: 3px;
+  }
   margin: 0 auto;
   max-width: 114rem;
   display: block;
