@@ -22,8 +22,16 @@
     &--upcoming {
       border: 1px black solid;
       margin: 2rem;
-      flex: 1 1 auto;
+      flex: 1 1 calc((100% - 4 * 2rem) / 2);
+
+      overflow: auto;
       text-align: center;
+      height: 80vh;
+    }
+    &--running {
+      .running-head {
+        font-size: 8rem;
+      }
     }
   }
 }
