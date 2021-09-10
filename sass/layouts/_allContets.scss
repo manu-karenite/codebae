@@ -1,0 +1,29 @@
+.all-contests {
+  font-size: 8rem;
+  &-head {
+    font-size: 7rem;
+    text-align: center;
+    padding: 2rem;
+    font-family: "Heebo", sans-serif;
+    color: $color-tertiary;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    background-color: $color-header-bg;
+  }
+  &__splitter {
+    padding: 3rem 3rem;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    &--running,
+    &--upcoming {
+      border: 1px black solid;
+      margin: 2rem;
+      flex: 1 1 auto;
+      text-align: center;
+    }
+  }
+}
