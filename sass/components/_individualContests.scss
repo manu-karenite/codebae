@@ -1,0 +1,13 @@
+.individual-contest {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  .icsolo {
+    flex: 1 1 auto;
+    margin: 1rem;
+    white-space: nowrap;
+  }
+}
