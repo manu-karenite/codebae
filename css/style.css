@@ -129,5 +129,21 @@ body {
     .all-contests__splitter--running, .all-contests__splitter--upcoming {
       border: 1px black solid;
       margin: 2rem;
-      flex: 1 1 auto;
-      text-align: center; }
+      flex: 1 1 calc((100% - 4 * 2rem) / 2);
+      overflow: auto;
+      text-align: center;
+      height: 80vh; }
+    .all-contests__splitter--running .running-head {
+      font-size: 8rem; }
+
+.individual-contest {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .individual-contest .icsolo {
+    flex: 1 1 auto;
+    margin: 1rem;
+    white-space: nowrap; }
