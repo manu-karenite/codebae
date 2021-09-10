@@ -76,7 +76,7 @@ body {
   color: green;
   font-weight: bolder; }
 
-.platforms .platforms-head {
+.platforms-head {
   font-size: 7rem;
   text-align: center;
   padding: 2rem;
@@ -106,3 +106,28 @@ body {
       width: 15rem; }
     .platforms .container__platforms--individual:not(:last-child) {
       margin-right: 1rem; }
+
+.all-contests {
+  font-size: 8rem; }
+  .all-contests-head {
+    font-size: 7rem;
+    text-align: center;
+    padding: 2rem;
+    font-family: "Heebo", sans-serif;
+    color: #e9d1b6;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    background-color: #120917; }
+  .all-contests__splitter {
+    padding: 3rem 3rem;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .all-contests__splitter--running, .all-contests__splitter--upcoming {
+      border: 1px black solid;
+      margin: 2rem;
+      flex: 1 1 auto;
+      text-align: center; }
