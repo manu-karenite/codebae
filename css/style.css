@@ -98,9 +98,11 @@ body {
   .platforms .container__platforms--individual {
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: 20%;
+    flex-basis: 25%;
     padding: 2rem;
     margin-bottom: 10rem;
     border: solid 0.8rem #120917; }
     .platforms .container__platforms--individual .logo-format-pic {
       width: 15rem; }
+    .platforms .container__platforms--individual:not(:last-child) {
+      margin-right: 1rem; }
