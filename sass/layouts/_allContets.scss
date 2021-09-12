@@ -23,14 +23,19 @@
       border: 1px black solid;
       margin: 2rem;
       flex: 1 1 calc((100% - 4 * 2rem) / 2);
-
-      overflow: auto;
+      overflow: hidden;
       text-align: center;
-      height: 80vh;
+      height: 70vh;
+      padding: 0 1rem;
     }
     &--running {
       .running-head {
-        font-size: 8rem;
+        display: block;
+      }
+      .slider-running {
+        overflow-x: scroll;
+        overflow-y: scroll;
+        height: 60vh;
       }
     }
   }

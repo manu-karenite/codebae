@@ -130,20 +130,23 @@ body {
       border: 1px black solid;
       margin: 2rem;
       flex: 1 1 calc((100% - 4 * 2rem) / 2);
-      overflow: auto;
+      overflow: hidden;
       text-align: center;
-      height: 80vh; }
+      height: 70vh;
+      padding: 0 1rem; }
     .all-contests__splitter--running .running-head {
-      font-size: 8rem; }
+      display: block; }
+    .all-contests__splitter--running .slider-running {
+      overflow-x: scroll;
+      overflow-y: scroll;
+      height: 60vh; }
 
 .individual-contest {
-  font-size: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap; }
-  .individual-contest .icsolo {
-    flex: 1 1 auto;
-    margin: 1rem;
+  font-size: 4rem; }
+  .individual-contest .icsoloh {
+    padding: 0 0.5rem 0.5rem 0;
     white-space: nowrap; }
+  .individual-contest .icsolo {
+    padding: 0 1rem 1rem 0;
+    background-color: green;
+    word-wrap: break-word; }

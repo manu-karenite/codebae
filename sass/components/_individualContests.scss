@@ -1,13 +1,12 @@
 .individual-contest {
-  font-size: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  .icsolo {
-    flex: 1 1 auto;
-    margin: 1rem;
+  font-size: 4rem;
+  .icsoloh {
+    padding: 0 0.5rem 0.5rem 0;
     white-space: nowrap;
+  }
+  .icsolo {
+    padding: 0 1rem 1rem 0;
+    background-color: green;
+    word-wrap: break-word;
   }
 }
