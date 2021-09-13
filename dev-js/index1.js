@@ -85,7 +85,7 @@ function runningDisplay(runningContests)
 }
 
 let runningContests=undefined;
-let upcomingContests=undefined;
+
 fetch("https://kontests.net/api/v1/all").then(function(response)
 {
     return response.json();
@@ -102,12 +102,6 @@ fetch("https://kontests.net/api/v1/all").then(function(response)
     runningDisplay(runningContests);
     
    
-    /////
-     upcomingContests = data.filter(function(element,index)
-    {
-        return (element.status==='BEFORE');
-    })
-    console.log(upcomingContests);
 })
 
 
