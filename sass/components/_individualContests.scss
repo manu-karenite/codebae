@@ -12,6 +12,7 @@
   }
   .icsolo {
     padding: 1rem;
+
     margin-bottom: 1rem;
     //background-color: green;
     white-space: nowrap;
@@ -46,5 +47,17 @@
 }
 
 .greenc {
-  background-color: green;
+  background-color: #32cd32 !important;
+}
+.redc {
+  background-color: #ce2029 !important;
+  color: #febfc3 !important;
+}
+.yellowc {
+  background-color: #ffd800 !important;
+}
+.greenc,
+.redc,
+.yellowc {
+  font-weight: bold;
 }
