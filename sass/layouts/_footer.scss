@@ -1,0 +1,43 @@
+@import "../abstract/mixins";
+.moveup {
+  background-color: $color-header-bg;
+  .movetoSites {
+    font-size: 3rem;
+    margin: 1rem 0 1rem 0;
+    padding: 0.8rem;
+    border: solid 0.5rem $color-header-bg;
+    border-radius: 1rem;
+    font-family: "Heebo", sans-serif;
+    background-color: $color-header-bg;
+    @include home-gradient;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .footer-list {
+    font-size: 3rem;
+    font-family: "Heebo", sans-serif;
+    color: $color-tertiary;
+    .version-history {
+      @include home-gradient;
+
+      text-align: center;
+    }
+    .container-footer {
+      text-align: center;
+      padding: 1rem 55rem 1rem 55rem;
+      @include home-gradient;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      .logo-footer {
+        padding: 1rem;
+        margin: 1rem;
+        .footer-logo {
+          width: 5rem;
+        }
+      }
+    }
+  }
+}
