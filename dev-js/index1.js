@@ -2,8 +2,16 @@
 const wishLabel = document.querySelector(".wish");
 const movetoContestsButton = document.querySelector('.movetoSites');
 const sectionPlatforms = document.querySelector('.platforms');
+const runningSection = document.querySelector('.running-contests');
 
-
+const runningHead=`      <tr class="individual-contest">
+                       <td class="nameh icsoloh">Name</td>
+                       <td class="platformh icsoloh">Platform</td>
+                       <td class="start-dateh icsoloh">Starts</td>
+                       <td class="end-dateh icsoloh">Ends</td>
+                       <td class="registerh icsoloh">Register</td>
+                       <td class="durationh icsoloh">in 1 Day</td>
+                    </tr>`;
 ///////////////////////////////////////////
 const now = new Date();
 console.log(now);
@@ -35,23 +43,71 @@ movetoContestsButton.addEventListener('click',(e)=>
 
 })
 
+function runningDisplay(runningContests)
+{
+    //title is to be set first
+    runningSection.innerHTML=``;
+    runningSection.insertAdjacentHTML("beforeend",runningHead);
 
+    //now, we need to handle all the other contests;
+    let html = undefined;
+   for(const item of runningContests)
+   {
+     const option = 
+    {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric',
+        weekday: 'short',
+        hour :"numeric",
+        minute:"numeric",
+    }  
+    let [startDate,endDate] = [new Intl.DateTimeFormat("en-IN",option).format(new Date(item.start_time)),new Intl.DateTimeFormat('en-IN',option).format(new Date(item.end_time))];
+
+    const classToPut="greenc";
+    if(item.in_24_hours==="NO")
+        classToPut="redc";
+        html = `
+                <tr class="individual-contest">
+                    <td class="name icsolo">${item.name}</td>
+                       <td class="platform icsolo">${item.site}</td>
+                       <td class="start-date icsolo">${startDate}</td>
+                       <td class="end-date icsolo">${endDate}</td>
+                       <td class="register icsolo">
+                       <a href="${item.url}" target="_blank" class="remove-decoration">Register</a></td>
+                        <td class=in24Hours icsolo ${classToPut}">yes</td>
+                       
+                  </tr>`;
+        runningSection.insertAdjacentHTML("beforeend",html);
+        
+   }
+    
+}
+
+let runningContests=undefined;
+let upcomingContests=undefined;
 fetch("https://kontests.net/api/v1/all").then(function(response)
 {
     return response.json();
 }).then(function(data)
 {
     //filter kar lo
-    let runningContests = data.filter(function(element,index)
+    runningContests = data.filter(function(element,index)
     {
         return (element.status==='CODING');
     })
     runningContests.reverse();
-    console.log(runningContests);
+    ////////////
+     console.log(runningContests);
+    runningDisplay(runningContests);
+    
+   
     /////
-    const upcomingContests = data.filter(function(element,index)
+     upcomingContests = data.filter(function(element,index)
     {
         return (element.status==='BEFORE');
     })
     console.log(upcomingContests);
 })
+
+
