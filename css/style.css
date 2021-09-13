@@ -157,7 +157,7 @@ body {
     padding: 1rem; }
   .individual-contest .icsolo {
     padding: 1rem;
-    word-wrap: break-word; }
+    white-space: nowrap; }
 
 .moveup {
   background-color: #120917; }
