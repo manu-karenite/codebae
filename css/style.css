@@ -186,7 +186,19 @@ body {
     border-radius: 1rem; }
 
 .greenc {
-  background-color: green; }
+  background-color: #32cd32 !important; }
+
+.redc {
+  background-color: #ce2029 !important;
+  color: #febfc3 !important; }
+
+.yellowc {
+  background-color: #ffd800 !important; }
+
+.greenc,
+.redc,
+.yellowc {
+  font-weight: bold; }
 
 .moveup {
   background-color: #120917; }
