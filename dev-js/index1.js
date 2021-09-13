@@ -34,3 +34,24 @@ movetoContestsButton.addEventListener('click',(e)=>
     )
 
 })
+
+
+fetch("https://kontests.net/api/v1/all").then(function(response)
+{
+    return response.json();
+}).then(function(data)
+{
+    //filter kar lo
+    let runningContests = data.filter(function(element,index)
+    {
+        return (element.status==='CODING');
+    })
+    runningContests.reverse();
+    console.log(runningContests);
+    /////
+    const upcomingContests = data.filter(function(element,index)
+    {
+        return (element.status==='BEFORE');
+    })
+    console.log(upcomingContests);
+})
