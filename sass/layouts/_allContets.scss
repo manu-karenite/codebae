@@ -30,7 +30,11 @@
     }
     &--running {
       .running-head {
+        font-size: 3.5rem;
         display: block;
+        font-family: "Heebo", sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
       }
       .slider-running {
         overflow-x: scroll;
