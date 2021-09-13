@@ -120,14 +120,14 @@ body {
     background-color: #120917; }
   .all-contests__splitter {
     padding: 3rem 3rem;
-    background-color: grey;
+    background-color: #e9d1b6;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap; }
     .all-contests__splitter--running, .all-contests__splitter--upcoming {
-      border: 1px black solid;
+      border: 0.3rem #120917 solid;
       margin: 2rem;
       flex: 1 1 calc((100% - 4 * 2rem) / 2);
       overflow: hidden;
@@ -135,7 +135,7 @@ body {
       height: 70vh;
       padding: 0 1rem; }
     .all-contests__splitter--running .running-head {
-      font-size: 3.5rem;
+      font-size: 4rem;
       display: block;
       font-family: "Heebo", sans-serif;
       font-weight: bold;
@@ -157,7 +157,32 @@ body {
     padding: 1rem; }
   .individual-contest .icsolo {
     padding: 1rem;
-    white-space: nowrap; }
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #e9d1b6;
+    font-family: "Heebo", sans-serif;
+    border-right: solid 0.2rem #120917;
+    letter-spacing: 0.1rem; }
+    .individual-contest .icsolo .remove-decoration {
+      text-decoration: none;
+      color: #e9d1b6;
+      letter-spacing: 0.2rem; }
+  .individual-contest .name,
+  .individual-contest .start-date,
+  .individual-contest .end-date {
+    text-align: left; }
+  .individual-contest .name {
+    font-weight: bold;
+    letter-spacing: 0.2rem; }
+  .individual-contest .end-date {
+    border: none; }
+  .individual-contest .register {
+    background-color: #5a3d1d;
+    border-radius: 1rem; }
+
+.greenc {
+  background-color: green; }
 
 .moveup {
   background-color: #120917; }
