@@ -10,7 +10,7 @@ const runningHead=`      <tr class="individual-contest">
                        <td class="start-dateh icsoloh">Starts</td>
                        <td class="end-dateh icsoloh">Ends</td>
                        <td class="registerh icsoloh">Register</td>
-                       <td class="durationh icsoloh">in 1 Day</td>
+                       <td class="durationh icsoloh">Status</td>
                     </tr>`;
 ///////////////////////////////////////////
 const now = new Date();
@@ -64,9 +64,7 @@ function runningDisplay(runningContests)
     }  
     let [startDate,endDate] = [new Intl.DateTimeFormat("en-IN",option).format(new Date(item.start_time)),new Intl.DateTimeFormat('en-IN',option).format(new Date(item.end_time))];
 
-    const classToPut="greenc";
-    if(item.in_24_hours==="NO")
-        classToPut="redc";
+    let classToPut="yellowc";
         html = `
                 <tr class="individual-contest">
                     <td class="name icsolo">${item.name}</td>
@@ -75,7 +73,7 @@ function runningDisplay(runningContests)
                        <td class="end-date icsolo">${endDate}</td>
                        <td class="register icsolo">
                        <a href="${item.url}" target="_blank" class="remove-decoration">Register</a></td>
-                        <td class=in24Hours icsolo ${classToPut}">yes</td>
+                        <td class="in24Hours icsolo ${classToPut}">Ongoing</td>
                        
                   </tr>`;
         runningSection.insertAdjacentHTML("beforeend",html);
