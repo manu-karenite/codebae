@@ -127,7 +127,7 @@ body {
     align-items: center;
     flex-wrap: wrap; }
     .all-contests__splitter--running, .all-contests__splitter--upcoming {
-      border: 0.3rem #120917 solid;
+      border: 0.31rem #120917 solid;
       margin: 2rem;
       flex: 1 1 calc((100% - 4 * 2rem) / 2);
       overflow: hidden;
