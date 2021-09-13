@@ -28,15 +28,18 @@
       height: 70vh;
       padding: 0 1rem;
     }
-    &--running {
-      .running-head {
+    &--running,
+    &--upcoming {
+      .running-head,
+      .upcoming-head {
         font-size: 4rem;
         display: block;
         font-family: "Heebo", sans-serif;
         font-weight: bold;
         letter-spacing: 0.2rem;
       }
-      .slider-running {
+      .slider-running,
+      .slider-upcoming {
         overflow-x: scroll;
         overflow-y: scroll;
         height: 60vh;
