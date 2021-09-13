@@ -135,18 +135,45 @@ body {
       height: 70vh;
       padding: 0 1rem; }
     .all-contests__splitter--running .running-head {
-      display: block; }
+      font-size: 3.5rem;
+      display: block;
+      font-family: "Heebo", sans-serif;
+      font-weight: bold;
+      letter-spacing: 0.2rem; }
     .all-contests__splitter--running .slider-running {
       overflow-x: scroll;
       overflow-y: scroll;
       height: 60vh; }
 
 .individual-contest {
-  font-size: 4rem; }
+  font-size: 2rem; }
   .individual-contest .icsoloh {
-    padding: 0 0.5rem 0.5rem 0;
-    white-space: nowrap; }
+    white-space: nowrap;
+    color: #d4a36e;
+    letter-spacing: 0.2rem;
+    font-family: "Heebo", sans-serif;
+    background-color: #120917;
+    border-radius: 0.5rem;
+    padding: 1rem; }
   .individual-contest .icsolo {
-    padding: 0 1rem 1rem 0;
-    background-color: green;
+    padding: 1rem;
     word-wrap: break-word; }
+
+.moveup {
+  background-color: #120917; }
+  .moveup .movetoSites {
+    font-size: 3rem;
+    margin: 2rem 0 2rem 0;
+    padding: 0.8rem;
+    border: solid 0.5rem #120917;
+    border-radius: 1rem;
+    font-family: "Heebo", sans-serif;
+    background-color: #120917;
+    background-image: linear-gradient(90deg, #bf7626 0%, #e9d1b6 50%, #e9d1b6 100%);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.3rem; }
+    .moveup .movetoSites:hover {
+      cursor: pointer; }
