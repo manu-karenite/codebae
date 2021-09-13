@@ -98,10 +98,11 @@ body {
   .platforms .container__platforms--individual {
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: 25%;
+    flex-basis: 16.67%;
     padding: 2rem;
     margin-bottom: 10rem;
-    border: solid 0.8rem #120917; }
+    border: solid 0.8rem #120917;
+    border-radius: 2rem; }
     .platforms .container__platforms--individual .logo-format-pic {
       width: 15rem; }
     .platforms .container__platforms--individual:not(:last-child) {
@@ -173,6 +174,7 @@ body {
       color: #e9d1b6;
       letter-spacing: 0.2rem; }
   .individual-contest .name,
+  .individual-contest .nameh,
   .individual-contest .start-date,
   .individual-contest .end-date {
     text-align: left; }

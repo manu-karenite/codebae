@@ -23,10 +23,11 @@
     &--individual {
       flex-grow: 0;
       flex-shrink: 1;
-      flex-basis: 25%;
+      flex-basis: 16.67%;
       padding: 2rem;
       margin-bottom: 10rem;
       border: solid 0.8rem $color-header-bg;
+      border-radius: 2rem;
       .logo-format-pic {
         width: 15rem;
       }
