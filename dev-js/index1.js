@@ -1,6 +1,6 @@
 'use strict';
 const wishLabel = document.querySelector(".wish");
-const movetoContestsButton = document.querySelector('#movetoSites');
+const movetoContestsButton = document.querySelector('.movetoSites');
 const sectionPlatforms = document.querySelector('.platforms');
 
 
