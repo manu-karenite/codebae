@@ -12,7 +12,39 @@
   }
   .icsolo {
     padding: 1rem;
+    margin-bottom: 1rem;
     //background-color: green;
     white-space: nowrap;
+    text-align: center;
+    background-color: $color-tertiary;
+    font-family: "Heebo", sans-serif;
+    border-right: solid 0.2rem $color-header-bg;
+    letter-spacing: 0.1rem;
+
+    .remove-decoration {
+      text-decoration: none;
+      color: $color-tertiary;
+      letter-spacing: 0.2rem;
+    }
   }
+  .name,
+  .start-date,
+  .end-date {
+    text-align: left;
+  }
+  .name {
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+  .end-date {
+    border: none;
+  }
+  .register {
+    background-color: #5a3d1d;
+    border-radius: 1rem;
+  }
+}
+
+.greenc {
+  background-color: green;
 }
