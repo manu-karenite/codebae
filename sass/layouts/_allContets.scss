@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     &--running,
     &--upcoming {
-      border: 0.31rem $color-header-bg solid;
+      border: 0.3rem $color-header-bg solid;
       margin: 2rem;
       flex: 1 1 calc((100% - 4 * 2rem) / 2);
       overflow: hidden;
