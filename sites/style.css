@@ -87,3 +87,25 @@ body {
         margin: 1rem; }
         .moveup .footer-list .container-footer .logo-footer .footer-logo {
           width: 5rem; }
+
+main .summary {
+  font-size: 4rem;
+  margin: 2rem; }
+  main .summary .info-header {
+    text-align: center;
+    font-family: "Fredoka One", cursive;
+    font-size: 7rem; }
+  main .summary .info-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center; }
+    main .summary .info-detail .info-pic__container--format {
+      width: 20rem; }
+    main .summary .info-detail .info-detailings {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      font-family: "Heebo", sans-serif;
+      font-weight: bold; }
