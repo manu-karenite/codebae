@@ -135,20 +135,32 @@ body {
       text-align: center;
       height: 70vh;
       padding: 0 1rem; }
-    .all-contests__splitter--running .running-head,
-    .all-contests__splitter--running .upcoming-head, .all-contests__splitter--upcoming .running-head,
-    .all-contests__splitter--upcoming .upcoming-head {
-      font-size: 4rem;
-      display: block;
-      font-family: "Heebo", sans-serif;
-      font-weight: bold;
-      letter-spacing: 0.2rem; }
-    .all-contests__splitter--running .slider-running,
-    .all-contests__splitter--running .slider-upcoming, .all-contests__splitter--upcoming .slider-running,
-    .all-contests__splitter--upcoming .slider-upcoming {
+      .all-contests__splitter--running .running-head,
+      .all-contests__splitter--running .upcoming-head, .all-contests__splitter--upcoming .running-head,
+      .all-contests__splitter--upcoming .upcoming-head {
+        font-size: 4rem;
+        display: block;
+        font-family: "Heebo", sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.2rem; }
+      .all-contests__splitter--running .slider-running,
+      .all-contests__splitter--running .slider-upcoming, .all-contests__splitter--upcoming .slider-running,
+      .all-contests__splitter--upcoming .slider-upcoming {
+        overflow-x: scroll;
+        overflow-y: scroll;
+        height: 60vh; }
+      .all-contests__splitter--running .slider-running-sites, .all-contests__splitter--upcoming .slider-running-sites {
+        width: max-content;
+        height: auto;
+        overflow: hidden; }
+    .all-contests__splitter--running--sites {
+      width: auto;
+      height: auto;
       overflow-x: scroll;
-      overflow-y: scroll;
-      height: 60vh; }
+      padding-bottom: 2rem; }
+      .all-contests__splitter--running--sites .individual-contest .icsolo,
+      .all-contests__splitter--running--sites .individual-contest .icsoloh {
+        padding: 1rem 1rem; }
 
 .individual-contest {
   font-size: 2rem; }
@@ -253,19 +265,36 @@ main .summary {
   margin: 2rem; }
   main .summary .info-header {
     text-align: center;
-    font-family: "Fredoka One", cursive;
-    font-size: 7rem; }
+    font-family: "Archivo Black", sans-serif;
+    font-size: 6rem; }
   main .summary .info-detail {
+    margin: 0 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center; }
-    main .summary .info-detail .info-pic__container--format {
-      width: 20rem; }
+    main .summary .info-detail .info-pic {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30%; }
+      main .summary .info-detail .info-pic__container--format {
+        width: 20rem; }
     main .summary .info-detail .info-detailings {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      font-family: "Heebo", sans-serif;
-      font-weight: bold; }
+      font-family: "Glory", sans-serif;
+      font-size: 3rem;
+      word-wrap: normal;
+      width: 70%; }
+      main .summary .info-detail .info-detailings .brief,
+      main .summary .info-detail .info-detailings .services,
+      main .summary .info-detail .info-detailings .founded,
+      main .summary .info-detail .info-detailings .visit {
+        width: 70%; }
+
+.slider-running {
+  height: auto; }

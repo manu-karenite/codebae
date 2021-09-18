@@ -88,24 +88,159 @@ body {
         .moveup .footer-list .container-footer .logo-footer .footer-logo {
           width: 5rem; }
 
+.all-contests {
+  font-size: 8rem; }
+  .all-contests-head {
+    font-size: 7rem;
+    text-align: center;
+    padding: 2rem;
+    font-family: "Heebo", sans-serif;
+    color: #e9d1b6;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    background-color: #120917; }
+  .all-contests__splitter {
+    padding: 3rem 3rem;
+    background-color: #e9d1b6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .all-contests__splitter--running, .all-contests__splitter--upcoming {
+      border: 0.3rem #120917 solid;
+      margin: 2rem;
+      flex: 1 1 calc((100% - 4 * 2rem) / 2);
+      overflow: hidden;
+      text-align: center;
+      height: 70vh;
+      padding: 0 1rem; }
+      .all-contests__splitter--running .running-head,
+      .all-contests__splitter--running .upcoming-head, .all-contests__splitter--upcoming .running-head,
+      .all-contests__splitter--upcoming .upcoming-head {
+        font-size: 4rem;
+        display: block;
+        font-family: "Heebo", sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.2rem; }
+      .all-contests__splitter--running .slider-running,
+      .all-contests__splitter--running .slider-upcoming, .all-contests__splitter--upcoming .slider-running,
+      .all-contests__splitter--upcoming .slider-upcoming {
+        overflow-x: scroll;
+        overflow-y: scroll;
+        height: 60vh; }
+      .all-contests__splitter--running .slider-running-sites, .all-contests__splitter--upcoming .slider-running-sites {
+        width: max-content;
+        height: auto;
+        overflow: hidden; }
+    .all-contests__splitter--running--sites {
+      width: auto;
+      height: auto;
+      overflow-x: scroll;
+      padding-bottom: 2rem; }
+      .all-contests__splitter--running--sites .individual-contest .icsolo,
+      .all-contests__splitter--running--sites .individual-contest .icsoloh {
+        padding: 1rem 1rem; }
+
+.individual-contest {
+  font-size: 2rem; }
+  .individual-contest .icsoloh {
+    white-space: nowrap;
+    color: #d4a36e;
+    letter-spacing: 0.2rem;
+    font-family: "Heebo", sans-serif;
+    background-color: #120917;
+    border-radius: 0.5rem;
+    padding: 1rem; }
+  .individual-contest .icsolo {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #e9d1b6;
+    font-family: "Heebo", sans-serif;
+    border-right: solid 0.2rem #120917;
+    letter-spacing: 0.1rem; }
+    .individual-contest .icsolo .remove-decoration {
+      text-decoration: none;
+      color: #e9d1b6;
+      letter-spacing: 0.2rem; }
+  .individual-contest .name,
+  .individual-contest .nameh,
+  .individual-contest .start-date,
+  .individual-contest .end-date {
+    text-align: left; }
+  .individual-contest .name {
+    font-weight: bold;
+    letter-spacing: 0.2rem; }
+  .individual-contest .end-date {
+    border: none; }
+  .individual-contest .register {
+    background-color: #5a3d1d;
+    border-radius: 1rem; }
+
+.greenc {
+  background-color: #32cd32 !important; }
+
+.redc {
+  background-color: #ce2029 !important;
+  color: #febfc3 !important; }
+
+.yellowc {
+  background-color: #ffd800 !important; }
+
+.greenc,
+.redc,
+.yellowc {
+  font-weight: bold; }
+
+.light-font {
+  color: #bf7626;
+  font-weight: bolder; }
+
+.blue-font {
+  color: blue;
+  font-weight: bolder; }
+
+.green-font {
+  color: green;
+  font-weight: bolder; }
+
 main .summary {
   font-size: 4rem;
   margin: 2rem; }
   main .summary .info-header {
     text-align: center;
-    font-family: "Fredoka One", cursive;
-    font-size: 7rem; }
+    font-family: "Archivo Black", sans-serif;
+    font-size: 6rem; }
   main .summary .info-detail {
+    margin: 0 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center; }
-    main .summary .info-detail .info-pic__container--format {
-      width: 20rem; }
+    main .summary .info-detail .info-pic {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30%; }
+      main .summary .info-detail .info-pic__container--format {
+        width: 20rem; }
     main .summary .info-detail .info-detailings {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      font-family: "Heebo", sans-serif;
-      font-weight: bold; }
+      font-family: "Glory", sans-serif;
+      font-size: 3rem;
+      word-wrap: normal;
+      width: 70%; }
+      main .summary .info-detail .info-detailings .brief,
+      main .summary .info-detail .info-detailings .services,
+      main .summary .info-detail .info-detailings .founded,
+      main .summary .info-detail .info-detailings .visit {
+        width: 70%; }
+
+.slider-running {
+  height: auto; }
