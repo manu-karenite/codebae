@@ -157,7 +157,8 @@ body {
       width: auto;
       height: auto;
       overflow-x: scroll;
-      padding-bottom: 2rem; }
+      padding-bottom: 2rem;
+      padding-top: 2rem; }
       .all-contests__splitter--running--sites .individual-contest .icsolo,
       .all-contests__splitter--running--sites .individual-contest .icsoloh {
         padding: 1rem 1rem; }
@@ -266,7 +267,8 @@ main .summary {
   main .summary .info-header {
     text-align: center;
     font-family: "Archivo Black", sans-serif;
-    font-size: 6rem; }
+    font-size: 6rem;
+    margin-bottom: 2rem; }
   main .summary .info-detail {
     margin: 0 10rem;
     display: flex;
@@ -286,7 +288,7 @@ main .summary {
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      font-family: "Glory", sans-serif;
+      font-family: "Heebo", sans-serif;
       font-size: 3rem;
       word-wrap: normal;
       width: 70%; }
@@ -295,6 +297,14 @@ main .summary {
       main .summary .info-detail .info-detailings .founded,
       main .summary .info-detail .info-detailings .visit {
         width: 70%; }
+      main .summary .info-detail .info-detailings .visit {
+        padding: 1rem;
+        text-align: center; }
+      main .summary .info-detail .info-detailings .brief {
+        margin-bottom: 2rem; }
 
 .slider-running {
   height: auto; }
+
+.info-pic__container--format {
+  border-radius: 1.5rem; }

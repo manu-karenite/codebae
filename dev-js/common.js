@@ -1,5 +1,6 @@
 'use strict';
 const wishLabel = document.querySelector(".wish");
+const topr = document.querySelector(".summary");
 const now = new Date();
 console.log(now);
 const hour = now.getHours();
@@ -17,3 +18,14 @@ else
     mood="Night";
 
 wishLabel.textContent=`Good ${mood}!`;
+document.querySelector(".movetoSites").addEventListener("click",(e)=>
+{
+    e.preventDefault();
+    topr.scrollIntoView(
+        {
+            
+            "behavior":"smooth"
+        }
+        
+    )
+})
