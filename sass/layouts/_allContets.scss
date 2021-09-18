@@ -27,9 +27,6 @@
       text-align: center;
       height: 70vh;
       padding: 0 1rem;
-    }
-    &--running,
-    &--upcoming {
       .running-head,
       .upcoming-head {
         font-size: 4rem;
@@ -43,6 +40,24 @@
         overflow-x: scroll;
         overflow-y: scroll;
         height: 60vh;
+      }
+
+      .slider-running-sites {
+        width: max-content;
+        height: auto;
+        overflow: hidden;
+      }
+    }
+    &--running--sites {
+      width: auto;
+      height: auto;
+      overflow-x: scroll;
+      padding-bottom: 2rem;
+      .individual-contest {
+        .icsolo,
+        .icsoloh {
+          padding: 1rem 1rem;
+        }
       }
     }
   }
