@@ -38,3 +38,27 @@
   color: $at4;
   @include format-info-button;
 }
+
+//for codeforces
+.cf {
+  border: black 0.5rem solid;
+  padding: 0.5rem;
+}
+.cfdark {
+  color: $cf3;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.cflight {
+  color: $cf2;
+  font-size: 90%;
+  &t {
+    color: black;
+  }
+}
+.visitcf {
+  background-color: $cf1;
+  color: $cf3;
+  @include format-info-button;
+  font-weight: bold;
+}

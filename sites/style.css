@@ -296,3 +296,27 @@ main .summary {
   border-radius: 0.75rem;
   padding: 1rem;
   text-decoration: none; }
+
+.cf {
+  border: black 0.5rem solid;
+  padding: 0.5rem; }
+
+.cfdark {
+  color: #bc1c24;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+.cflight {
+  color: #1a8dce;
+  font-size: 90%; }
+  .cflightt {
+    color: black; }
+
+.visitcf {
+  background-color: #fccf67;
+  color: #bc1c24;
+  text-align: center;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold; }
