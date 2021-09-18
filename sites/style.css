@@ -270,8 +270,29 @@ main .summary {
 
 .visitcc {
   background-color: #543e27;
-  text-align: center;
   color: #f2e7c7;
-  text-decoration: none;
+  text-align: center;
   border-radius: 0.75rem;
-  padding: 1rem; }
+  padding: 1rem;
+  text-decoration: none; }
+
+.at {
+  border: #433425 0.5rem solid;
+  padding: 0.5rem; }
+
+.atdark {
+  color: #0d0d0d;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+.atlight {
+  color: #333230;
+  font-size: 90%; }
+
+.visitat {
+  background-color: #0d0d0d;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-decoration: none; }

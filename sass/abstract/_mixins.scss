@@ -11,3 +11,10 @@
   font-weight: bold;
   letter-spacing: 0.3rem;
 }
+
+@mixin format-info-button {
+  text-align: center;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-decoration: none;
+}

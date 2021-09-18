@@ -1,3 +1,5 @@
+// for codechef
+
 .cc {
   border: $cc2 0.5rem solid;
   padding: 0.5rem;
@@ -13,9 +15,26 @@
 }
 .visitcc {
   background-color: $cc1;
-  text-align: center;
   color: $cc3;
-  text-decoration: none;
-  border-radius: 0.75rem;
-  padding: 1rem;
+  @include format-info-button;
+}
+
+//for atcoder
+.at {
+  border: $cc2 0.5rem solid;
+  padding: 0.5rem;
+}
+.atdark {
+  color: $at2;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.atlight {
+  color: $at1;
+  font-size: 90%;
+}
+.visitat {
+  background-color: $at2;
+  color: $at4;
+  @include format-info-button;
 }
