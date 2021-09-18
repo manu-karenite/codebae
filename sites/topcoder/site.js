@@ -52,7 +52,7 @@ fetch("https://kontests.net/api/v1/all")
     })
     .then(function (data) {
         siteContests = data.filter(function (element, index) {
-            return element.site === "HackerRank";
+            return element.site === "TopCoder";
         });
 
         runningContests = siteContests.filter((element, index) => {
