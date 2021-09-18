@@ -4,20 +4,27 @@ main {
     margin: 2rem;
     .info-header {
       text-align: center;
-      font-family: "Fredoka One", cursive;
-      font-size: 7rem;
+      font-family: "Archivo Black", sans-serif;
+      font-size: 6rem;
     }
     .info-detail {
+      margin: 0 10rem;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       align-content: center;
       .info-pic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         &__container {
           &--format {
             width: 20rem;
+            //margin: 0 auto;
           }
         }
+        width: 30%;
       }
 
       .info-detailings {
@@ -25,9 +32,21 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        font-family: "Heebo", sans-serif;
-        font-weight: bold;
+        font-family: "Glory", sans-serif;
+        font-size: 3rem;
+
+        word-wrap: normal;
+        width: 70%;
+        .brief,
+        .services,
+        .founded,
+        .visit {
+          width: 70%;
+        }
       }
     }
   }
+}
+.slider-running {
+  height: auto;
 }
