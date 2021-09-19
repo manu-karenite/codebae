@@ -150,3 +150,20 @@
   font-weight: bold;
   letter-spacing: 0.15rem;
 }
+//for hackerrank
+.hcdark {
+  color: $hc2;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.hclight {
+  color: $hc1;
+  font-size: 90%;
+}
+.visithc {
+  background-color: #000000;
+  color: #ffffff;
+  @include format-info-button;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+}

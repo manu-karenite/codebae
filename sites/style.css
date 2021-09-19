@@ -415,3 +415,22 @@ main .summary {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.15rem; }
+
+.hcdark {
+  color: #0d141e;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+.hclight {
+  color: #00ea63;
+  font-size: 90%; }
+
+.visithc {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.15rem; }
