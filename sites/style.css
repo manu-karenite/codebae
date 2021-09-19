@@ -303,7 +303,6 @@ main .summary {
 
 .cfdark {
   color: #bc1c24;
-  font-weight: bold;
   letter-spacing: 2px; }
 
 .cflight {
@@ -315,6 +314,30 @@ main .summary {
 .visitcf {
   background-color: #fccf67;
   color: #bc1c24;
+  text-align: center;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold; }
+
+.tc {
+  border: #fef002 0.5rem solid;
+  padding: 0.5rem; }
+
+.tcdark {
+  color: #0772ba;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+.tclight {
+  color: #f79323;
+  font-size: 90%; }
+  .tclightt {
+    color: black; }
+
+.visittc {
+  background-color: #00ff00;
+  color: #0772ba;
   text-align: center;
   border-radius: 0.75rem;
   padding: 1rem;

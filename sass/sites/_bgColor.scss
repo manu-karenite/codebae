@@ -46,7 +46,6 @@
 }
 .cfdark {
   color: $cf3;
-  font-weight: bold;
   letter-spacing: 2px;
 }
 .cflight {
@@ -59,6 +58,30 @@
 .visitcf {
   background-color: $cf1;
   color: $cf3;
+  @include format-info-button;
+  font-weight: bold;
+}
+
+//for topcoder
+.tc {
+  border: $tc3 0.5rem solid;
+  padding: 0.5rem;
+}
+.tcdark {
+  color: $tc1;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.tclight {
+  color: $tc2;
+  font-size: 90%;
+  &t {
+    color: black;
+  }
+}
+.visittc {
+  background-color: #00ff00;
+  color: $tc1;
   @include format-info-button;
   font-weight: bold;
 }
