@@ -247,7 +247,8 @@ main .summary {
         padding: 1rem;
         text-align: center; }
       main .summary .info-detail .info-detailings .brief {
-        margin-bottom: 2rem; }
+        margin-bottom: 2rem;
+        text-align: justify; }
 
 .slider-running {
   height: auto; }
