@@ -56,7 +56,7 @@ function runningDisplay(runningContests)
                        <td class="start-date icsolo">${startDate}</td>
                        <td class="end-date icsolo">${endDate}</td>
                        <td class="register icsolo">
-                       <a href="${item.url}" target="_blank" class="remove-decoration">Register</a></td>
+                       <a href="${item.url}" target="_blank" class="remove-decoration">Participate!</a></td>
                         <td class="in24Hours icsolo ${classToPut}">Ongoing</td>
                        
                   </tr>`;

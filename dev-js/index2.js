@@ -37,9 +37,10 @@ function upcomingDisplay(upcomingContests)
     let [startDate,endDate] = [new Intl.DateTimeFormat("en-IN",option).format(new Date(item.start_time)),new Intl.DateTimeFormat('en-IN',option).format(new Date(item.end_time))];
 
     let classToPut="redc";
-    let message="1d remaining!"
+    let btnText="Register!";
+    let message="1d left! Register"
     if(item.in_24_hours=="No")
-        {classToPut="greenc";message=">1d remaining"}
+        {classToPut="greenc";message=">1d remaining";btnText="Registration Open";}
         html = `
                 <tr class="individual-contest">
                         <td class="name icsolo">${item.name}</td>
@@ -47,7 +48,7 @@ function upcomingDisplay(upcomingContests)
                        <td class="start-date icsolo">${startDate}</td>
                        <td class="end-date icsolo">${endDate}</td>
                        <td class="register icsolo">
-                       <a href="${item.url}" target="_blank" class="remove-decoration">Register</a></td>
+                       <a href="${item.url}" target="_blank" class="remove-decoration">${btnText}</a></td>
                         <td class="in24Hours icsolo ${classToPut}">${message}</td>
                        
                   </tr>`;

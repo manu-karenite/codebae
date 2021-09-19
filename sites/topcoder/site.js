@@ -25,8 +25,18 @@ function setHeader() {
     runningSection.insertAdjacentHTML("beforeend", runningHead);
 }
 function setRows(array, colorClass, text) {
+    let btnText;
+    if(colorClass=="redc")
+       { btnText="Register";}
+    else if(colorClass=="greenc")
+       { btnText="Registration Open";}
+    else if(colorClass=="yellowc")
+        {btnText="Participate!";}
     for (const item of array) {
+      
         let [startDate, endDate] = [new Intl.DateTimeFormat("en-IN", option).format(new Date(item.start_time)), new Intl.DateTimeFormat("en-IN", option).format(new Date(item.end_time))];
+        //let btnText="Participate";
+        
         html = `
                 <tr class="individual-contest">
                     <td class="name icsolo">${item.name}</td>
@@ -34,7 +44,7 @@ function setRows(array, colorClass, text) {
                        <td class="start-date icsolo">${startDate}</td>
                        <td class="end-date icsolo">${endDate}</td>
                        <td class="register icsolo">
-                       <a href="${item.url}" target="_blank" class="remove-decoration">Register</a></td>
+                       <a href="${item.url}" target="_blank" class="remove-decoration">${btnText}</a></td>
                         <td class="in24Hours icsolo ${colorClass}">${text}</td>
                   </tr>`;
         runningSection.insertAdjacentHTML("beforeend", html);
@@ -67,7 +77,7 @@ fetch("https://kontests.net/api/v1/all")
         runningContests.reverse();
         inOneDayContests.reverse();
         setHeader();
-        setRows(inOneDayContests, "redc", "1d remaining!");
+        setRows(inOneDayContests, "redc", "1d left! Register");
         setRows(runningContests, "yellowc", "Ongoing");
         setRows(afterOneDayContests, "greenc", ">1d remaining!");
     });
