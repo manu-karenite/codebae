@@ -64,6 +64,10 @@ body {
   .summary .intro-4 {
     padding-bottom: 2.5rem; }
 
+.moveBottom:hover,
+.moveBottom1:hover {
+  cursor: pointer; }
+
 .light-font {
   color: #bf7626;
   font-weight: bolder; }

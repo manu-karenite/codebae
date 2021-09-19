@@ -87,3 +87,23 @@ fetch("https://kontests.net/api/v1/all").then(function(response)
 })
 
 
+document.querySelector(".moveBottom").addEventListener("click",(e)=>
+{
+    e.preventDefault();
+    document.querySelector(".all-contests-head").scrollIntoView(
+        {
+            behavior:"smooth"
+        }
+    )
+
+})
+document.querySelector(".moveBottom1").addEventListener("click",(e)=>
+{
+    e.preventDefault();
+    document.querySelector(".platforms-head").scrollIntoView(
+        {
+            behavior:"smooth"
+        }
+    )
+
+})
