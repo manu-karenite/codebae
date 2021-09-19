@@ -364,3 +364,26 @@ main .summary {
   border-radius: 0.75rem;
   padding: 1rem;
   text-decoration: none; }
+
+.gk {
+  border: #fbbc05 0.5rem solid;
+  padding: 0.5rem; }
+
+.gkdark {
+  color: #ea4335;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+.gklight {
+  color: #4285f3;
+  font-size: 90%; }
+
+.visitgk {
+  background-color: #ea4335;
+  color: #fbbc05;
+  text-align: center;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.15rem; }

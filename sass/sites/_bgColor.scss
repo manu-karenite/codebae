@@ -105,3 +105,24 @@
   color: #ffffff;
   @include format-info-button;
 }
+//google-kickstart
+.gk {
+  border: $gk2 0.5rem solid;
+  padding: 0.5rem;
+}
+.gkdark {
+  color: $gk1;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.gklight {
+  color: $gk4;
+  font-size: 90%;
+}
+.visitgk {
+  background-color: $gk1;
+  color: $gk2;
+  @include format-info-button;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+}
