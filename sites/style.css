@@ -322,8 +322,8 @@ main .summary {
   font-weight: bold; }
 
 .visitcfg {
-  background-color: #000;
-  color: #bc1c24;
+  background-color: #bc1c24;
+  color: #ffffff;
   text-align: center;
   border-radius: 0.75rem;
   padding: 1rem;
