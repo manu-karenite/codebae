@@ -47,6 +47,7 @@
 .cfdark {
   color: $cf3;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 .cflight {
   color: $cf2;
@@ -60,6 +61,11 @@
   color: $cf3;
   @include format-info-button;
   font-weight: bold;
+}
+.visitcfg {
+  background-color: $cf4;
+  color: $cf3;
+  @include format-info-button;
 }
 
 //for topcoder

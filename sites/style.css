@@ -303,7 +303,8 @@ main .summary {
 
 .cfdark {
   color: #bc1c24;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  font-weight: bold; }
 
 .cflight {
   color: #1a8dce;
@@ -319,6 +320,14 @@ main .summary {
   padding: 1rem;
   text-decoration: none;
   font-weight: bold; }
+
+.visitcfg {
+  background-color: #000;
+  color: #bc1c24;
+  text-align: center;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-decoration: none; }
 
 .tc {
   border: #fef002 0.5rem solid;
