@@ -396,3 +396,22 @@ main .summary {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.15rem; }
+
+.lcdark {
+  color: #fea116;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+.lclight {
+  color: #000000;
+  font-size: 90%; }
+
+.visitlc {
+  background-color: #fea116;
+  color: #000000;
+  text-align: center;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.15rem; }

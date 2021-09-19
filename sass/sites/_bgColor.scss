@@ -132,3 +132,21 @@
   font-weight: bold;
   letter-spacing: 0.15rem;
 }
+//for leetcode
+
+.lcdark {
+  color: $lc2;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.lclight {
+  color: $lc1;
+  font-size: 90%;
+}
+.visitlc {
+  background-color: $lc2;
+  color: $lc1;
+  @include format-info-button;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+}
