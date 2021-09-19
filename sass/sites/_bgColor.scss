@@ -85,3 +85,23 @@
   @include format-info-button;
   font-weight: bold;
 }
+
+//for hackerearth
+.he {
+  border: $he1 0.5rem solid;
+  padding: 0.5rem;
+}
+.hedark {
+  color: $at1;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.helight {
+  color: $he1;
+  font-size: 90%;
+}
+.visithe {
+  background-color: $he1;
+  color: #ffffff;
+  @include format-info-button;
+}

@@ -265,10 +265,10 @@ main .summary {
   font-size: 4rem;
   margin: 2rem; }
   main .summary .info-header {
-    text-align: center;
     font-family: "Archivo Black", sans-serif;
     font-size: 6rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    text-align: center; }
   main .summary .info-detail {
     margin: 0 10rem;
     display: flex;

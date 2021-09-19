@@ -211,10 +211,10 @@ main .summary {
   font-size: 4rem;
   margin: 2rem; }
   main .summary .info-header {
-    text-align: center;
     font-family: "Archivo Black", sans-serif;
     font-size: 6rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    text-align: center; }
   main .summary .info-detail {
     margin: 0 10rem;
     display: flex;
@@ -343,3 +343,24 @@ main .summary {
   padding: 1rem;
   text-decoration: none;
   font-weight: bold; }
+
+.he {
+  border: #2b3455 0.5rem solid;
+  padding: 0.5rem; }
+
+.hedark {
+  color: #333230;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+.helight {
+  color: #2b3455;
+  font-size: 90%; }
+
+.visithe {
+  background-color: #2b3455;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-decoration: none; }
