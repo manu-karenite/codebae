@@ -1,37 +1,75 @@
-.head {
+header {
+  padding: 1rem;
   background-color: $color-header-bg;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-
-  .head-brand {
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 60%;
-    #logo-main {
-      height: 80%;
-      background-size: cover;
-    }
-  }
-  .wish-time {
-    text-align: center;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 40%;
+  .head {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    .wish {
-      font-family: "Heebo", sans-serif;
-      font-size: 5rem;
-      color: $color-primary;
-      letter-spacing: 0.3rem;
-      font-weight: bold;
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    .wish {
-      padding: 0.5rem;
+    @include respond(phone) {
+      flex-direction: column;
+    }
+    .head-brand {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 60%;
+      @include respond(tab-port) {
+        flex-basis: 100%;
+        flex-grow: 1;
+      }
+      @include respond(phone) {
+        flex-basis: 100%;
+        flex-grow: 1;
+      }
+
+      #logo-main {
+        height: 80%;
+        background-size: cover;
+        @include respond(tab-port) {
+          width: 60%;
+        }
+        @include respond(phone) {
+          width: 60%;
+        }
+      }
+    }
+    .wish-time {
+      text-align: center;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 40%;
+      @include respond(tab-port) {
+        flex-basis: 100%;
+        background-color: $color-header-bg;
+        padding-bottom: 2rem;
+        flex-grow: 1;
+      }
+      @include respond(phone) {
+        flex-basis: 100%;
+        background-color: $color-header-bg;
+        padding-bottom: 2rem;
+        flex-grow: 1;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      .wish {
+        font-family: "Heebo", sans-serif;
+        font-size: 5rem;
+        color: $color-primary;
+        letter-spacing: 0.3rem;
+        font-weight: bold;
+      }
+      .wish {
+        padding: 0.5rem;
+      }
     }
   }
 }

@@ -18,3 +18,36 @@
   padding: 1rem;
   text-decoration: none;
 }
+
+// for responsiveness
+/*
+big-device : above 1800px
+tab-land : 1200 px
+tab-port : upto 900px
+phone : upto 600px
+*/
+@mixin respond($parameter) {
+  @if $parameter == big-device {
+    @media screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+  @if $parameter == tab-land {
+    @media screen and (min-width: 56.25em) and (max-width: 75em) {
+      //1200
+      @content;
+    }
+  }
+  @if $parameter == tab-port {
+    @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+      //900
+      @content;
+    }
+  }
+  @if $parameter == phone {
+    @media screen and (max-width: 37.5em) {
+      //600
+      @content;
+    }
+  }
+}

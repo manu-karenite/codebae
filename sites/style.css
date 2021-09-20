@@ -1,3 +1,15 @@
+/*
+big-device : above 1800px
+tab-land : 1200 px
+tab-port : upto 900px
+phone : upto 600px
+*/
+/*
+big-device : above 1800px
+tab-land : 1200 px
+tab-port : upto 900px
+phone : upto 600px
+*/
 *,
 *::after,
 *::before {
@@ -7,41 +19,96 @@
 
 html {
   font-size: 45%; }
+  @media screen and (min-width: 56.25em) and (max-width: 75em) {
+    html {
+      font-size: 40%; } }
+  @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+    html {
+      font-size: 35%; } }
+  @media screen and (max-width: 37.5em) {
+    html {
+      font-size: 35%; } }
+  @media screen and (min-width: 112.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
 
-.head {
-  background-color: #120917;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center; }
-  .head .head-brand {
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 60%; }
-    .head .head-brand #logo-main {
-      height: 80%;
-      background-size: cover; }
-  .head .wish-time {
-    text-align: center;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 40%;
+header {
+  padding: 1rem;
+  background-color: #120917; }
+  header .head {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center; }
-    .head .wish-time .wish {
-      font-family: "Heebo", sans-serif;
-      font-size: 5rem;
-      color: #bf7626;
-      letter-spacing: 0.3rem;
-      font-weight: bold; }
-    .head .wish-time .wish {
-      padding: 0.5rem; }
+    @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+      header .head {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    @media screen and (max-width: 37.5em) {
+      header .head {
+        flex-direction: column; } }
+    header .head .head-brand {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 60%; }
+      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+        header .head .head-brand {
+          flex-basis: 100%;
+          flex-grow: 1; } }
+      @media screen and (max-width: 37.5em) {
+        header .head .head-brand {
+          flex-basis: 100%;
+          flex-grow: 1; } }
+      header .head .head-brand #logo-main {
+        height: 80%;
+        background-size: cover; }
+        @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+          header .head .head-brand #logo-main {
+            width: 60%; } }
+        @media screen and (max-width: 37.5em) {
+          header .head .head-brand #logo-main {
+            width: 60%; } }
+    header .head .wish-time {
+      text-align: center;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+        header .head .wish-time {
+          flex-basis: 100%;
+          background-color: #120917;
+          padding-bottom: 2rem;
+          flex-grow: 1; } }
+      @media screen and (max-width: 37.5em) {
+        header .head .wish-time {
+          flex-basis: 100%;
+          background-color: #120917;
+          padding-bottom: 2rem;
+          flex-grow: 1; } }
+      header .head .wish-time .wish {
+        font-family: "Heebo", sans-serif;
+        font-size: 5rem;
+        color: #bf7626;
+        letter-spacing: 0.3rem;
+        font-weight: bold; }
+      header .head .wish-time .wish {
+        padding: 0.5rem; }
 
+/*
+big-device : above 1800px
+tab-land : 1200 px
+tab-port : upto 900px
+phone : upto 600px
+*/
 .moveup {
   background-color: #120917; }
   .moveup .movetoSites {
@@ -82,12 +149,24 @@ body {
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center; }
+      @media screen and (max-width: 37.5em) {
+        .moveup .footer-list .container-footer {
+          overflow-x: scroll; } }
+      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+        .moveup .footer-list .container-footer {
+          overflow-x: scroll; } }
       .moveup .footer-list .container-footer .logo-footer {
         padding: 1rem;
         margin: 1rem; }
         .moveup .footer-list .container-footer .logo-footer .footer-logo {
           width: 5rem; }
 
+/*
+big-device : above 1800px
+tab-land : 1200 px
+tab-port : upto 900px
+phone : upto 600px
+*/
 .all-contests {
   font-size: 8rem; }
   .all-contests-head {
@@ -107,6 +186,18 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap; }
+    @media screen and (max-width: 37.5em) {
+      .all-contests__splitter {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: scroll; } }
+    @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+      .all-contests__splitter {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: scroll; } }
     .all-contests__splitter--running, .all-contests__splitter--upcoming {
       border: 0.3rem #120917 solid;
       margin: 2rem;
@@ -115,11 +206,16 @@ body {
       text-align: center;
       height: 70vh;
       padding: 0 1rem; }
+      @media screen and (max-width: 37.5em) {
+        .all-contests__splitter--running, .all-contests__splitter--upcoming {
+          flex-basis: 100%; } }
+      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+        .all-contests__splitter--running, .all-contests__splitter--upcoming {
+          flex-basis: 100%; } }
       .all-contests__splitter--running .running-head,
       .all-contests__splitter--running .upcoming-head, .all-contests__splitter--upcoming .running-head,
       .all-contests__splitter--upcoming .upcoming-head {
         font-size: 4rem;
-        display: block;
         font-family: "Heebo", sans-serif;
         font-weight: bold;
         letter-spacing: 0.2rem; }
@@ -129,6 +225,18 @@ body {
         overflow-x: scroll;
         overflow-y: scroll;
         height: 60vh; }
+      @media screen and (max-width: 37.5em) {
+        .all-contests__splitter--running .slider-running, .all-contests__splitter--upcoming .slider-running {
+          height: 40vh; } }
+      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+        .all-contests__splitter--running .slider-running, .all-contests__splitter--upcoming .slider-running {
+          height: 40vh; } }
+      @media screen and (max-width: 37.5em) {
+        .all-contests__splitter--running .slider-upcoming, .all-contests__splitter--upcoming .slider-upcoming {
+          height: 50vh; } }
+      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+        .all-contests__splitter--running .slider-upcoming, .all-contests__splitter--upcoming .slider-upcoming {
+          height: 40vh; } }
       .all-contests__splitter--running .slider-running-sites, .all-contests__splitter--upcoming .slider-running-sites {
         width: max-content;
         height: auto;
@@ -141,7 +249,7 @@ body {
       padding-top: 2rem; }
       .all-contests__splitter--running--sites .individual-contest .icsolo,
       .all-contests__splitter--running--sites .individual-contest .icsoloh {
-        padding: 1rem 1rem; }
+        padding: 2rem 2rem; }
 
 .individual-contest {
   font-size: 2rem; }

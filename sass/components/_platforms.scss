@@ -24,12 +24,22 @@
       flex-grow: 0;
       flex-shrink: 1;
       flex-basis: 16.67%;
+      @include respond(phone) {
+        flex-basis: 25%;
+      }
       padding: 2rem;
+      margin: 0 2rem 0 2rem;
       margin-bottom: 10rem;
       border: solid 0.8rem $color-header-bg;
       border-radius: 2rem;
       .logo-format-pic {
         width: 20rem;
+        @include respond(tab-port) {
+          width: 16rem;
+        }
+        @include respond(phone) {
+          width: 14rem;
+        }
       }
       &:not(:last-child) {
         margin-right: 1rem;

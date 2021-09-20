@@ -1,3 +1,4 @@
+@import "../abstract/mixins";
 .all-contests {
   font-size: 8rem;
   &-head {
@@ -17,12 +18,30 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: scroll;
+    }
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: scroll;
+    }
     flex-wrap: wrap;
     &--running,
     &--upcoming {
       border: 0.3rem $color-header-bg solid;
       margin: 2rem;
       flex: 1 1 calc((100% - 4 * 2rem) / 2);
+      @include respond(phone) {
+        flex-basis: 100%;
+      }
+      @include respond(tab-port) {
+        flex-basis: 100%;
+      }
       overflow: hidden;
       text-align: center;
       height: 70vh;
@@ -30,7 +49,7 @@
       .running-head,
       .upcoming-head {
         font-size: 4rem;
-        display: block;
+        //display: block;
         font-family: "Heebo", sans-serif;
         font-weight: bold;
         letter-spacing: 0.2rem;
@@ -40,6 +59,22 @@
         overflow-x: scroll;
         overflow-y: scroll;
         height: 60vh;
+      }
+      .slider-running {
+        @include respond(phone) {
+          height: 40vh;
+        }
+        @include respond(tab-port) {
+          height: 40vh;
+        }
+      }
+      .slider-upcoming {
+        @include respond(phone) {
+          height: 50vh;
+        }
+        @include respond(tab-port) {
+          height: 40vh;
+        }
       }
 
       .slider-running-sites {
@@ -57,7 +92,7 @@
       .individual-contest {
         .icsolo,
         .icsoloh {
-          padding: 1rem 1rem;
+          padding: 2rem 2rem;
         }
       }
     }

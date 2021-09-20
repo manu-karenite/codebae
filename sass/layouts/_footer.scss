@@ -31,6 +31,12 @@
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
+      @include respond(phone) {
+        overflow-x: scroll;
+      }
+      @include respond(tab-port) {
+        overflow-x: scroll;
+      }
       .logo-footer {
         padding: 1rem;
         margin: 1rem;
