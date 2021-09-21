@@ -18,34 +18,38 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    @include respond(phone) {
+    /* @include respond(phone) {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      overflow: scroll;
+      //overflow: scroll;
     }
     @include respond(tab-port) {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      overflow: scroll;
-    }
+      //overflow: scroll;
+    }*/
     flex-wrap: wrap;
+
     &--running,
     &--upcoming {
       border: 0.3rem $color-header-bg solid;
       margin: 2rem;
       flex: 1 1 calc((100% - 4 * 2rem) / 2);
-      @include respond(phone) {
-        flex-basis: 100%;
-      }
-      @include respond(tab-port) {
-        flex-basis: 100%;
-      }
+
       overflow: hidden;
       text-align: center;
       height: 70vh;
       padding: 0 1rem;
+      @include respond(phone) {
+        flex: 1 1 100%;
+        height: 40vh;
+      }
+      @include respond(tab-port) {
+        flex: 1 1 100%;
+        height: 40vh;
+      }
       .running-head,
       .upcoming-head {
         font-size: 4rem;
@@ -86,7 +90,7 @@
     &--running--sites {
       width: auto;
       height: auto;
-      overflow-x: scroll;
+      //overflow-x: scroll;
       padding-bottom: 2rem;
       padding-top: 2rem;
       .individual-contest {
