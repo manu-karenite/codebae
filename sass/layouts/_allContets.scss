@@ -66,10 +66,10 @@
       }
       .slider-running {
         @include respond(phone) {
-          height: 40vh;
+          height: 50vh;
         }
         @include respond(tab-port) {
-          height: 40vh;
+          height: 50vh;
         }
       }
       .slider-upcoming {
@@ -77,7 +77,7 @@
           height: 50vh;
         }
         @include respond(tab-port) {
-          height: 40vh;
+          height: 50vh;
         }
       }
 

@@ -239,16 +239,16 @@ phone : upto 600px
         height: 60vh; }
       @media screen and (max-width: 37.5em) {
         .all-contests__splitter--running .slider-running, .all-contests__splitter--upcoming .slider-running {
-          height: 40vh; } }
+          height: 50vh; } }
       @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
         .all-contests__splitter--running .slider-running, .all-contests__splitter--upcoming .slider-running {
-          height: 40vh; } }
+          height: 50vh; } }
       @media screen and (max-width: 37.5em) {
         .all-contests__splitter--running .slider-upcoming, .all-contests__splitter--upcoming .slider-upcoming {
           height: 50vh; } }
       @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
         .all-contests__splitter--running .slider-upcoming, .all-contests__splitter--upcoming .slider-upcoming {
-          height: 40vh; } }
+          height: 50vh; } }
       .all-contests__splitter--running .slider-running-sites, .all-contests__splitter--upcoming .slider-running-sites {
         width: max-content;
         height: auto;
@@ -376,6 +376,9 @@ main .summary {
 
 .info-pic__container--format {
   border-radius: 1.5rem; }
+
+.info-slide {
+  overflow-x: scroll; }
 
 .cc {
   border: #433425 0.5rem solid;
