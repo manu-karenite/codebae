@@ -35,6 +35,12 @@ html {
 body {
   box-sizing: border-box; }
 
+/** {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+for tesing purposes*/
 header {
   padding: 1rem;
   background-color: #120917; }
@@ -139,7 +145,6 @@ phone : upto 600px
       text-align: center; }
     .moveup .footer-list .container-footer {
       text-align: center;
-      padding: 1rem 55rem 1rem 55rem;
       background-image: linear-gradient(90deg, #bf7626 0%, #e9d1b6 50%, #e9d1b6 100%);
       -webkit-background-clip: text;
       color: transparent;
@@ -148,16 +153,21 @@ phone : upto 600px
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      align-items: center; }
-      @media screen and (max-width: 37.5em) {
-        .moveup .footer-list .container-footer {
-          overflow-x: scroll; } }
-      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
-        .moveup .footer-list .container-footer {
-          overflow-x: scroll; } }
+      align-items: center;
+      flex-wrap: wrap; }
       .moveup .footer-list .container-footer .logo-footer {
         padding: 1rem;
         margin: 1rem; }
+        @media screen and (max-width: 37.5em) {
+          .moveup .footer-list .container-footer .logo-footer {
+            flex-basis: 25%;
+            flex-grow: 1;
+            flex-shrink: 1; } }
+        @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+          .moveup .footer-list .container-footer .logo-footer {
+            flex-basis: 25%;
+            flex-grow: 1;
+            flex-shrink: 1; } }
         .moveup .footer-list .container-footer .logo-footer .footer-logo {
           width: 5rem; }
 
@@ -185,19 +195,19 @@ phone : upto 600px
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    /* @include respond(phone) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      //overflow: scroll;
+    }
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      //overflow: scroll;
+    }*/
     flex-wrap: wrap; }
-    @media screen and (max-width: 37.5em) {
-      .all-contests__splitter {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: scroll; } }
-    @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
-      .all-contests__splitter {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: scroll; } }
     .all-contests__splitter--running, .all-contests__splitter--upcoming {
       border: 0.3rem #120917 solid;
       margin: 2rem;
@@ -208,10 +218,12 @@ phone : upto 600px
       padding: 0 1rem; }
       @media screen and (max-width: 37.5em) {
         .all-contests__splitter--running, .all-contests__splitter--upcoming {
-          flex-basis: 100%; } }
+          flex: 1 1 100%;
+          height: 40vh; } }
       @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
         .all-contests__splitter--running, .all-contests__splitter--upcoming {
-          flex-basis: 100%; } }
+          flex: 1 1 100%;
+          height: 40vh; } }
       .all-contests__splitter--running .running-head,
       .all-contests__splitter--running .upcoming-head, .all-contests__splitter--upcoming .running-head,
       .all-contests__splitter--upcoming .upcoming-head {
@@ -244,7 +256,6 @@ phone : upto 600px
     .all-contests__splitter--running--sites {
       width: auto;
       height: auto;
-      overflow-x: scroll;
       padding-bottom: 2rem;
       padding-top: 2rem; }
       .all-contests__splitter--running--sites .individual-contest .icsolo,
@@ -282,6 +293,8 @@ phone : upto 600px
   .individual-contest .name {
     font-weight: bold;
     letter-spacing: 0.2rem; }
+  .individual-contest .nameh {
+    text-align: center; }
   .individual-contest .end-date {
     border: none; }
   .individual-contest .register {
