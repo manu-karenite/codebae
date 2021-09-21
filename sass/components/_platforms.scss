@@ -25,7 +25,7 @@
       flex-shrink: 1;
       flex-basis: 16.67%;
       @include respond(phone) {
-        flex-basis: 25%;
+        flex-basis: 20%;
       }
       padding: 2rem;
       margin: 0 2rem 0 2rem;
@@ -35,10 +35,10 @@
       .logo-format-pic {
         width: 20rem;
         @include respond(tab-port) {
-          width: 16rem;
+          width: 12rem;
         }
         @include respond(phone) {
-          width: 14rem;
+          width: 12rem;
         }
       }
       &:not(:last-child) {

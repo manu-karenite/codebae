@@ -171,15 +171,15 @@ header {
     border-radius: 2rem; }
     @media screen and (max-width: 37.5em) {
       .platforms .container__platforms--individual {
-        flex-basis: 25%; } }
+        flex-basis: 20%; } }
     .platforms .container__platforms--individual .logo-format-pic {
       width: 20rem; }
       @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
         .platforms .container__platforms--individual .logo-format-pic {
-          width: 16rem; } }
+          width: 12rem; } }
       @media screen and (max-width: 37.5em) {
         .platforms .container__platforms--individual .logo-format-pic {
-          width: 14rem; } }
+          width: 12rem; } }
     .platforms .container__platforms--individual:not(:last-child) {
       margin-right: 1rem; }
 
