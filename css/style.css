@@ -375,16 +375,6 @@ phone : upto 600px
       .moveup .footer-list .container-footer .logo-footer {
         padding: 1rem;
         margin: 1rem; }
-        @media screen and (max-width: 37.5em) {
-          .moveup .footer-list .container-footer .logo-footer {
-            flex-basis: 25%;
-            flex-grow: 1;
-            flex-shrink: 1; } }
-        @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
-          .moveup .footer-list .container-footer .logo-footer {
-            flex-basis: 25%;
-            flex-grow: 1;
-            flex-shrink: 1; } }
         .moveup .footer-list .container-footer .logo-footer .footer-logo {
           width: 5rem; }
 
@@ -394,47 +384,145 @@ tab-land : 1200 px
 tab-port : upto 900px
 phone : upto 600px
 */
-main .summary {
-  font-size: 4rem;
-  margin: 2rem; }
-  main .summary .info-header {
-    font-family: "Archivo Black", sans-serif;
-    font-size: 6rem;
-    margin-bottom: 2rem;
-    text-align: center; }
-  main .summary .info-detail {
-    margin: 0 5rem;
+/*main {
+  .summary {
+    font-size: 4rem;
+    margin: 2rem;
+
+    .info-header {
+      font-family: "Archivo Black", sans-serif;
+      font-size: 6rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .info-detail {
+      margin: 0 5rem;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-content: center;
+
+      .info-pic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__container {
+          &--format {
+            width: 20rem;
+            //margin: 0 auto;
+          }
+        }
+        width: 30%;
+      }
+
+      .info-detailings {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-family: "Heebo", sans-serif;
+        font-size: 3rem;
+        word-wrap: normal;
+        width: 100%;
+        .brief,
+        .services,
+        .founded,
+        .visit {
+          width: 70%;
+          @include respond(phone) {
+            flex-basis: 100%;
+            align-items: center;
+            justify-content: ;
+          }
+          @include respond(tab-port) {
+            flex-basis: 100%;
+          }
+        }
+        .visit {
+          padding: 1rem;
+          text-align: center;
+        }
+        .brief {
+          margin-bottom: 2rem;
+          text-align: justify;
+        }
+      }
+      @include respond(phone) {
+        flex-direction: column;
+      }
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
+    }
+  }
+}
+.responsive,
+.auto {
+  height: auto !important;
+}
+*/
+.summary .info-header {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 2rem; }
+
+.summary .info-detail {
+  margin: 8rem 25rem 5rem 25rem;
+  display: flex;
+  flex-direction: row; }
+  @media screen and (max-width: 37.5em) {
+    .summary .info-detail {
+      margin: 5rem 5rem; } }
+  @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+    .summary .info-detail {
+      margin: 5rem 5rem; } }
+  @media screen and (min-width: 56.25em) and (max-width: 75em) {
+    .summary .info-detail {
+      margin: 5rem 5rem; } }
+  @media screen and (max-width: 37.5em) {
+    .summary .info-detail {
+      display: flex;
+      flex-direction: column; } }
+  @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+    .summary .info-detail {
+      display: flex;
+      flex-direction: column; } }
+  .summary .info-detail .info-pic {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center; }
-    main .summary .info-detail .info-pic {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 30%; }
-      main .summary .info-detail .info-pic__container--format {
-        width: 20rem; }
-    main .summary .info-detail .info-detailings {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      font-family: "Heebo", sans-serif;
-      font-size: 3rem;
-      width: 100%; }
-      main .summary .info-detail .info-detailings .brief,
-      main .summary .info-detail .info-detailings .services,
-      main .summary .info-detail .info-detailings .founded,
-      main .summary .info-detail .info-detailings .visit {
-        width: 70%; }
-      main .summary .info-detail .info-detailings .visit {
-        padding: 1rem;
-        text-align: center; }
-      main .summary .info-detail .info-detailings .brief {
-        margin-bottom: 2rem;
-        text-align: justify; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8rem;
+    width: 30%; }
+    .summary .info-detail .info-pic .info-pic__container .info-pic__container--format {
+      width: 25rem; }
+    @media screen and (max-width: 37.5em) {
+      .summary .info-detail .info-pic {
+        width: 100%;
+        margin-right: 0; } }
+    @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+      .summary .info-detail .info-pic {
+        width: 100%;
+        margin-right: 0; } }
+  .summary .info-detail .info-detailings {
+    font-family: "Heebo", sans-serif;
+    font-size: 3rem;
+    text-align: justify;
+    width: 70%; }
+    .summary .info-detail .info-detailings .visit {
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem; }
+    @media screen and (max-width: 37.5em) {
+      .summary .info-detail .info-detailings {
+        width: 100%; } }
+    @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+      .summary .info-detail .info-detailings {
+        width: 100%; } }
 
 .responsive,
 .auto {
