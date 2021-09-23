@@ -43,74 +43,6 @@ body {
   outline: solid #f00 1px !important;
 }
 for tesing purposes*/
-header {
-  padding: 1rem;
-  background-color: #120917; }
-  header .head {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center; }
-    @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
-      header .head {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; } }
-    @media screen and (max-width: 37.5em) {
-      header .head {
-        flex-direction: column; } }
-    header .head .head-brand {
-      flex-grow: 0;
-      flex-shrink: 1;
-      flex-basis: 60%; }
-      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
-        header .head .head-brand {
-          flex-basis: 100%;
-          flex-grow: 1; } }
-      @media screen and (max-width: 37.5em) {
-        header .head .head-brand {
-          flex-basis: 100%;
-          flex-grow: 1; } }
-      header .head .head-brand #logo-main {
-        height: 80%;
-        background-size: cover; }
-        @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
-          header .head .head-brand #logo-main {
-            width: 60%; } }
-        @media screen and (max-width: 37.5em) {
-          header .head .head-brand #logo-main {
-            width: 60%; } }
-    header .head .wish-time {
-      text-align: center;
-      flex-grow: 0;
-      flex-shrink: 1;
-      flex-basis: 40%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center; }
-      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
-        header .head .wish-time {
-          flex-basis: 100%;
-          background-color: #120917;
-          padding-bottom: 2rem;
-          flex-grow: 1; } }
-      @media screen and (max-width: 37.5em) {
-        header .head .wish-time {
-          flex-basis: 100%;
-          background-color: #120917;
-          padding-bottom: 2rem;
-          flex-grow: 1; } }
-      header .head .wish-time .wish {
-        font-family: "Heebo", sans-serif;
-        font-size: 5rem;
-        color: #bf7626;
-        letter-spacing: 0.3rem;
-        font-weight: bold; }
-      header .head .wish-time .wish {
-        padding: 0.5rem; }
-
 /*
 big-device : above 1800px
 tab-land : 1200 px
@@ -551,3 +483,71 @@ main .summary {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.15rem; }
+
+header {
+  padding: 1rem;
+  background-color: #120917; }
+  header .head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+      header .head {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    @media screen and (max-width: 37.5em) {
+      header .head {
+        flex-direction: column; } }
+    header .head .head-brand {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 60%; }
+      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+        header .head .head-brand {
+          flex-basis: 100%;
+          flex-grow: 1; } }
+      @media screen and (max-width: 37.5em) {
+        header .head .head-brand {
+          flex-basis: 100%;
+          flex-grow: 1; } }
+      header .head .head-brand #logo-main {
+        height: 80%;
+        background-size: cover; }
+        @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+          header .head .head-brand #logo-main {
+            width: 60%; } }
+        @media screen and (max-width: 37.5em) {
+          header .head .head-brand #logo-main {
+            width: 60%; } }
+    header .head .wish-time {
+      text-align: center;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+        header .head .wish-time {
+          flex-basis: 100%;
+          background-color: #120917;
+          padding-bottom: 2rem;
+          flex-grow: 1; } }
+      @media screen and (max-width: 37.5em) {
+        header .head .wish-time {
+          flex-basis: 100%;
+          background-color: #120917;
+          padding-bottom: 2rem;
+          flex-grow: 1; } }
+      header .head .wish-time .wish {
+        font-family: "Heebo", sans-serif;
+        font-size: 5rem;
+        color: #bf7626;
+        letter-spacing: 0.3rem;
+        font-weight: bold; }
+      header .head .wish-time .wish {
+        padding: 0.5rem; }
