@@ -503,11 +503,13 @@ phone : upto 600px
     @media screen and (max-width: 37.5em) {
       .summary .info-detail .info-pic {
         width: 100%;
-        margin-right: 0; } }
+        margin-right: 0;
+        margin-bottom: 2rem; } }
     @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
       .summary .info-detail .info-pic {
         width: 100%;
-        margin-right: 0; } }
+        margin-right: 0;
+        margin-bottom: 2rem; } }
   .summary .info-detail .info-detailings {
     font-family: "Heebo", sans-serif;
     font-size: 3rem;
