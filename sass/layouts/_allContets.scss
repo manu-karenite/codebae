@@ -18,37 +18,43 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* @include respond(phone) {
+    flex-wrap: wrap;
+    /* we need to flex columnwise in phone and tab-port*/
+    @include respond(phone) {
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      //overflow: scroll;
+      justify-content: center;
+      align-items: space-around;
+      padding-right: 7rem;
     }
     @include respond(tab-port) {
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      //overflow: scroll;
-    }*/
-    flex-wrap: wrap;
-
+      justify-content: center;
+      align-items: space-around;
+      padding-right: 7rem;
+    }
+    @include respond(tab-land) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-around;
+      padding-right: 7rem;
+    }
     &--running,
     &--upcoming {
       border: 0.3rem $color-header-bg solid;
       margin: 2rem;
       flex: 1 1 calc((100% - 4 * 2rem) / 2);
-
       overflow: hidden;
       text-align: center;
       height: 70vh;
-      padding: 0 1rem;
+      padding: 2rem 1rem;
       @include respond(phone) {
-        flex: 1 1 100%;
-        height: 40vh;
+        width: 100%;
       }
       @include respond(tab-port) {
-        flex: 1 1 100%;
-        height: 40vh;
+        width: 100%;
+      }
+      @include respond(tab-land) {
+        width: 100%;
       }
       .running-head,
       .upcoming-head {
@@ -64,34 +70,12 @@
         overflow-y: scroll;
         height: 60vh;
       }
-      .slider-running {
-        @include respond(phone) {
-          height: 50vh;
-        }
-        @include respond(tab-port) {
-          height: 50vh;
-        }
-      }
-      .slider-upcoming {
-        @include respond(phone) {
-          height: 50vh;
-        }
-        @include respond(tab-port) {
-          height: 50vh;
-        }
-      }
-
-      .slider-running-sites {
-        width: max-content;
-        height: auto;
-        overflow: hidden;
-      }
     }
     &--running--sites {
       width: auto;
       height: auto;
       //overflow-x: scroll;
-      padding-bottom: 2rem;
+      //padding-bottom: 2rem;
       padding-top: 2rem;
       .individual-contest {
         .icsolo,
@@ -101,4 +85,9 @@
       }
     }
   }
+}
+.running-contests,
+.upcoming-contests {
+  overflow-y: scroll;
+  padding-bottom: 2rem;
 }

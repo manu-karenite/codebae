@@ -8,6 +8,7 @@
 }
 
 html {
+  height: auto;
   font-size: 45%;
   @include respond(tab-land) {
     font-size: 40%;
@@ -24,6 +25,7 @@ html {
 }
 body {
   box-sizing: border-box;
+  height: auto;
 }
 /** {
   background: #000 !important;

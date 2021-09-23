@@ -12,6 +12,7 @@ phone : upto 600px
   box-sizing: inherit; }
 
 html {
+  height: auto;
   font-size: 45%; }
   @media screen and (min-width: 56.25em) and (max-width: 75em) {
     html {
@@ -27,7 +28,8 @@ html {
       font-size: 50%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: auto; }
 
 /** {
   background: #000 !important;
@@ -207,19 +209,26 @@ phone : upto 600px
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* @include respond(phone) {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      //overflow: scroll;
-    }
-    @include respond(tab-port) {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      //overflow: scroll;
-    }*/
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    /* we need to flex columnwise in phone and tab-port*/ }
+    @media screen and (max-width: 37.5em) {
+      .all-contests__splitter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+        padding-right: 7rem; } }
+    @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+      .all-contests__splitter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+        padding-right: 7rem; } }
+    @media screen and (min-width: 56.25em) and (max-width: 75em) {
+      .all-contests__splitter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+        padding-right: 7rem; } }
     .all-contests__splitter--running, .all-contests__splitter--upcoming {
       border: 0.3rem #120917 solid;
       margin: 2rem;
@@ -227,15 +236,16 @@ phone : upto 600px
       overflow: hidden;
       text-align: center;
       height: 70vh;
-      padding: 0 1rem; }
+      padding: 2rem 1rem; }
       @media screen and (max-width: 37.5em) {
         .all-contests__splitter--running, .all-contests__splitter--upcoming {
-          flex: 1 1 100%;
-          height: 40vh; } }
+          width: 100%; } }
       @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
         .all-contests__splitter--running, .all-contests__splitter--upcoming {
-          flex: 1 1 100%;
-          height: 40vh; } }
+          width: 100%; } }
+      @media screen and (min-width: 56.25em) and (max-width: 75em) {
+        .all-contests__splitter--running, .all-contests__splitter--upcoming {
+          width: 100%; } }
       .all-contests__splitter--running .running-head,
       .all-contests__splitter--running .upcoming-head, .all-contests__splitter--upcoming .running-head,
       .all-contests__splitter--upcoming .upcoming-head {
@@ -249,30 +259,18 @@ phone : upto 600px
         overflow-x: scroll;
         overflow-y: scroll;
         height: 60vh; }
-      @media screen and (max-width: 37.5em) {
-        .all-contests__splitter--running .slider-running, .all-contests__splitter--upcoming .slider-running {
-          height: 50vh; } }
-      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
-        .all-contests__splitter--running .slider-running, .all-contests__splitter--upcoming .slider-running {
-          height: 50vh; } }
-      @media screen and (max-width: 37.5em) {
-        .all-contests__splitter--running .slider-upcoming, .all-contests__splitter--upcoming .slider-upcoming {
-          height: 50vh; } }
-      @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
-        .all-contests__splitter--running .slider-upcoming, .all-contests__splitter--upcoming .slider-upcoming {
-          height: 50vh; } }
-      .all-contests__splitter--running .slider-running-sites, .all-contests__splitter--upcoming .slider-running-sites {
-        width: max-content;
-        height: auto;
-        overflow: hidden; }
     .all-contests__splitter--running--sites {
       width: auto;
       height: auto;
-      padding-bottom: 2rem;
       padding-top: 2rem; }
       .all-contests__splitter--running--sites .individual-contest .icsolo,
       .all-contests__splitter--running--sites .individual-contest .icsoloh {
         padding: 2rem 2rem; }
+
+.running-contests,
+.upcoming-contests {
+  overflow-y: scroll;
+  padding-bottom: 2rem; }
 
 .individual-contest {
   font-size: 2rem; }
@@ -405,7 +403,7 @@ main .summary {
     margin-bottom: 2rem;
     text-align: center; }
   main .summary .info-detail {
-    margin: 0 10rem;
+    margin: 0 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -425,8 +423,7 @@ main .summary {
       align-items: flex-start;
       font-family: "Heebo", sans-serif;
       font-size: 3rem;
-      word-wrap: normal;
-      width: 70%; }
+      width: 100%; }
       main .summary .info-detail .info-detailings .brief,
       main .summary .info-detail .info-detailings .services,
       main .summary .info-detail .info-detailings .founded,
@@ -439,11 +436,6 @@ main .summary {
         margin-bottom: 2rem;
         text-align: justify; }
 
-.slider-running {
-  height: auto; }
-
-.info-pic__container--format {
-  border-radius: 1.5rem; }
-
-.info-slide {
-  overflow-x: scroll; }
+.responsive,
+.auto {
+  height: auto !important; }
