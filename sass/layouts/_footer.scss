@@ -35,17 +35,6 @@
       .logo-footer {
         padding: 1rem;
         margin: 1rem;
-
-        @include respond(phone) {
-          flex-basis: 25%;
-          flex-grow: 1;
-          flex-shrink: 1;
-        }
-        @include respond(tab-port) {
-          flex-basis: 25%;
-          flex-grow: 1;
-          flex-shrink: 1;
-        }
         .footer-logo {
           width: 5rem;
         }
