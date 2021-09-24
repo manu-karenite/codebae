@@ -81,3 +81,6 @@ let afterOneDayContests = undefined;
 */
 
 //for upcoming contests
+fetch("https://clist.by/api/v2/contest/").then(function (response) {
+        return response.json();
+    }).then((data)=>console.log(data));
