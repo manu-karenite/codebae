@@ -53,7 +53,7 @@ let runningContests = undefined;
 let inOneDayContests = undefined;
 let afterOneDayContests = undefined;
 
-fetch("https://kontests.net/api/v1/all")
+/*fetch("https://kontests.net/api/v1/all")
     .then(function (response) {
         return response.json();
     })
@@ -78,3 +78,6 @@ fetch("https://kontests.net/api/v1/all")
         setRows(runningContests, "yellowc", "Ongoing");
         setRows(afterOneDayContests, "greenc", ">1d remaining!");
     });
+*/
+
+//for upcoming contests
