@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+/** {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }
+  for tesing purposes*/

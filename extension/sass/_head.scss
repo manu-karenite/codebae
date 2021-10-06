@@ -1,0 +1,38 @@
+@import "variables";
+.header-3pane {
+  background-color: $color-header-bg;
+  color: $color-tertiary;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  /*optional styling*/
+  text-align: center;
+  font-size: 3rem;
+  &__left-pane {
+    margin-left: 3rem;
+  }
+  &__mid-pane {
+    //flex-basis: 60%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .wrapper {
+      font-family: "Lobster", cursive;
+      letter-spacing: 0.3rem;
+    }
+    margin: 0rem 8rem;
+  }
+  &__right-pane {
+    margin-right: 3rem;
+  }
+}
+
+.icon {
+  margin: 1rem 0rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
