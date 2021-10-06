@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+/** {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }
+  for tesing purposes*/
+.header-3pane {
+  background-color: #120917;
+  color: #e9d1b6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  /*optional styling*/
+  text-align: center;
+  font-size: 3rem; }
+  .header-3pane__left-pane {
+    margin-left: 3rem; }
+  .header-3pane__mid-pane {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 8rem; }
+    .header-3pane__mid-pane .wrapper {
+      font-family: "Lobster", cursive;
+      letter-spacing: 0.3rem; }
+  .header-3pane__right-pane {
+    margin-right: 3rem; }
+
+.icon {
+  margin: 1rem 0rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.divider {
+  padding: 2rem 0rem; }
+  .divider__wrapper--ongoing {
+    margin-bottom: 2rem; }
+    .divider__wrapper--ongoing .symbol-time .upcoming-ongoing {
+      width: 15rem; }
+    .divider__wrapper--ongoing .symbol-time h3 {
+      text-align: center;
+      font-size: 2rem;
+      font-family: "Heebo", sans-serif;
+      letter-spacing: 0.2rem;
+      background-color: pink;
+      display: inline-block;
+      padding: 0.75rem;
+      border-radius: 1rem;
+      background-color: #e9c70a; }
+      .divider__wrapper--ongoing .symbol-time h3:hover {
+        cursor: pointer; }
+      .divider__wrapper--ongoing .symbol-time h3:hover {
+        cursor: pointer; }
+  .divider__wrapper--upcoming .symbol-time .upcoming-ongoing {
+    width: 15rem; }
+  .divider__wrapper--upcoming .symbol-time h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Heebo", sans-serif;
+    letter-spacing: 0.2rem;
+    background-color: pink;
+    display: inline-block;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    background-color: #32cd32; }
+    .divider__wrapper--upcoming .symbol-time h3:hover {
+      cursor: pointer; }
+    .divider__wrapper--upcoming .symbol-time h3:hover {
+      cursor: pointer; }

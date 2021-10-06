@@ -1,0 +1,36 @@
+.divider {
+  padding: 2rem 0rem;
+  &__wrapper {
+    &--ongoing {
+      margin-bottom: 2rem;
+      .symbol-time {
+        .upcoming-ongoing {
+          width: 15rem;
+        }
+        h3 {
+          text-align: center;
+          @include h3-style;
+          background-color: #e9c70a;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &--upcoming {
+      .symbol-time {
+        .upcoming-ongoing {
+          width: 15rem;
+        }
+        h3 {
+          text-align: center;
+          @include h3-style;
+          background-color: #32cd32;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

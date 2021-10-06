@@ -1,0 +1,12 @@
+@mixin h3-style {
+  font-size: 2rem;
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 0.2rem;
+  background-color: pink;
+  display: inline-block;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
