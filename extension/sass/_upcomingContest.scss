@@ -1,7 +1,8 @@
 .contestUpcoming {
-  background-color: #fff599;
-  border: solid 0.2rem #ffe800;
-  margin-bottom: 0.5rem;
+  //   background-color: #fff599;
+  //   border: solid 0.2rem #ffe800;
+  margin-bottom: 0.75rem;
+  padding: 1rem;
   .name {
     @include contest-name;
   }
