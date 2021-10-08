@@ -84,3 +84,72 @@ html {
       cursor: pointer; }
     .divider__wrapper--upcoming .symbol-time h3:hover {
       cursor: pointer; }
+
+.contestOngoing {
+  background-color: #fff599;
+  border: solid 0.2rem #ffe800;
+  margin-bottom: 0.5rem; }
+  .contestOngoing .name {
+    font-size: 1.75rem;
+    font-family: "Bree Serif", serif;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem 1rem; }
+  .contestOngoing .ends-platform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .contestOngoing .ends-platform .ends {
+      font-size: 1.25rem;
+      font-family: "Heebo", sans-serif;
+      letter-spacing: 0.2rem; }
+    .contestOngoing .ends-platform .platform {
+      font-size: 1.25rem;
+      font-family: "Heebo", sans-serif;
+      letter-spacing: 0.2rem;
+      font-weight: bold; }
+  .contestOngoing .register {
+    text-align: center; }
+    .contestOngoing .register a {
+      text-decoration: none;
+      font-size: 1.75rem;
+      font-family: "Heebo", sans-serif;
+      letter-spacing: 0.2rem;
+      font-weight: bold;
+      text-decoration: underline;
+      color: black; }
+
+.contestUpcoming {
+  background-color: #fff599;
+  border: solid 0.2rem #ffe800;
+  margin-bottom: 0.5rem; }
+  .contestUpcoming .name {
+    font-size: 1.75rem;
+    font-family: "Bree Serif", serif;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem 1rem; }
+  .contestUpcoming .starts,
+  .contestUpcoming .ends {
+    font-size: 1.25rem;
+    font-family: "Heebo", sans-serif;
+    letter-spacing: 0.2rem;
+    padding: 0rem 1rem; }
+  .contestUpcoming .platform {
+    font-size: 1.25rem;
+    font-family: "Heebo", sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 2rem; }
+  .contestUpcoming .register {
+    text-align: center; }
+    .contestUpcoming .register a {
+      text-decoration: none;
+      font-size: 1.75rem;
+      font-family: "Heebo", sans-serif;
+      letter-spacing: 0.2rem;
+      font-weight: bold;
+      text-decoration: underline;
+      color: black; }

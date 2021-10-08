@@ -1,0 +1,24 @@
+.contestUpcoming {
+  background-color: #fff599;
+  border: solid 0.2rem #ffe800;
+  margin-bottom: 0.5rem;
+  .name {
+    @include contest-name;
+  }
+  .starts,
+  .ends {
+    @include contest-time;
+    padding: 0rem 1rem;
+  }
+  .platform {
+    @include contest-platform;
+    text-align: right;
+    padding-right: 2rem;
+  }
+  .register {
+    text-align: center;
+    a {
+      @include contest-link;
+    }
+  }
+}

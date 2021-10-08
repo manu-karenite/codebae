@@ -1,0 +1,26 @@
+.contestOngoing {
+  background-color: #fff599;
+  border: solid 0.2rem #ffe800;
+  margin-bottom: 0.5rem;
+  .name {
+    @include contest-name;
+  }
+  .ends-platform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .ends {
+      @include contest-time;
+    }
+    .platform {
+      @include contest-platform;
+    }
+  }
+  .register {
+    text-align: center;
+    a {
+      @include contest-link;
+    }
+  }
+}
