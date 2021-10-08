@@ -1,7 +1,6 @@
 .contestOngoing {
-  background-color: #fff599;
-  border: solid 0.2rem #ffe800;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding: 1rem;
   .name {
     @include contest-name;
   }
@@ -12,6 +11,7 @@
     align-items: center;
     .ends {
       @include contest-time;
+      padding: 0rem 1rem;
     }
     .platform {
       @include contest-platform;
