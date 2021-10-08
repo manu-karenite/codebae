@@ -10,3 +10,33 @@
     cursor: pointer;
   }
 }
+
+@mixin contest-name {
+  font-size: 1.75rem;
+  font-family: "Bree Serif", serif;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem 1rem;
+}
+@mixin contest-time {
+  font-size: 1.25rem;
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+@mixin contest-platform {
+  font-size: 1.25rem;
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+}
+
+@mixin contest-link {
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
