@@ -27,13 +27,6 @@ btnUpcoming.addEventListener("click",function(e)
      dividerWrapperUpcoming.innerHTML="";
      divider.style.backgroundColor="#120917";
     dividerWrapperUpcoming.insertAdjacentHTML("afterbegin",htmlToPut);
-    window.setTimeout(()=>
-        {
-            divider.style.backgroundColor="#fff";
-           document.querySelector("#centerGIF").style.display="none";
-        },
-        4000
-    )
      fetch("https://kontests.net/api/v1/all")
     .then(function (response) {
         return response.json();
@@ -72,7 +65,8 @@ btnUpcoming.addEventListener("click",function(e)
         `;
            dividerWrapperUpcoming.insertAdjacentHTML("beforeend",templateHTML);
         }
-
+        document.querySelector("#centerGIF").style.display="none";
+        divider.style.backgroundColor="#fff";
 
     }
 })
@@ -94,15 +88,6 @@ btnOngoing.addEventListener("click",function(e)
     //step3: bring the wait GIF and mix the whole background
     divider.style.backgroundColor="#120917";
     dividerWrapperOngoing.insertAdjacentHTML("afterbegin",htmlToPut);
-    //step4: work on the promise
-    window.setTimeout(()=>
-        {
-            divider.style.backgroundColor="#fff";
-           document.querySelector("#centerGIF").style.display="none";
-
-        },
-        4000
-    )
     fetch("https://kontests.net/api/v1/all")
     .then(function (response) {
         return response.json();
@@ -119,6 +104,7 @@ btnOngoing.addEventListener("click",function(e)
     
     function buildProgram(runningContests)
     {
+        //dividerWrapperOngoing.style.display="none";
         divider.style.padding="0rem 0rem";
         for(let i=0;i<runningContests.length;i++)
         {
@@ -142,5 +128,7 @@ btnOngoing.addEventListener("click",function(e)
         `;
            dividerWrapperOngoing.insertAdjacentHTML("beforeend",templateHTML);
         }
+        document.querySelector("#centerGIF").style.display="none";
+        divider.style.backgroundColor="#fff";
     }
 })
