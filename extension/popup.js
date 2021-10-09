@@ -6,7 +6,13 @@ const btnOngoing=document.querySelector("#btnOngoing");
 const dividerWrapperOngoing=document.querySelector(".divider__wrapper--ongoing");
 const dividerWrapperUpcoming=document.querySelector(".divider__wrapper--upcoming");
 const divider=document.querySelector(".divider");
+const header=document.querySelector(".symbol-time");
 
+const logo1=document.querySelector(".icon1");
+const logo2=document.querySelector(".icon2");
+
+let upcoming = false;
+let ongoing=false;
 const option = 
     {
         day: 'numeric',
@@ -16,11 +22,11 @@ const option =
         hour :"numeric",
         minute:"numeric",
     }  
-btnUpcoming.addEventListener("click",function(e)
+
+function upcomingSet()
 {
-    e.preventDefault();
     const htmlToPut=`
-    <div id="centerGIF"><center><img src="../img/wait.gif"></center></div>
+    <div id="centerGIFF"><center><img src="../img/wait.gif"></center></div>
     `;
      console.log("hello from upcoming");
      dividerWrapperOngoing.style.display="none";
@@ -65,19 +71,28 @@ btnUpcoming.addEventListener("click",function(e)
         `;
            dividerWrapperUpcoming.insertAdjacentHTML("beforeend",templateHTML);
         }
-        document.querySelector("#centerGIF").style.display="none";
+      document.querySelector("#centerGIFF").style.display="none";
+      console.log( document.querySelector("#centerGIF"));
+      console.log("heyyyyyy");
+        logo1.innerHTML="";
+        
+        const img1=`<img src="../img/svg/clock1.svg" alt="Home" style="height: 3rem;
+                    width: 3rem;" title="View Ongoing Contests" id="renderOngoing">`;
+        logo1.insertAdjacentHTML("beforeend",img1);
         divider.style.backgroundColor="#fff";
-
+        dividerWrapperUpcoming.style.display="block";
+        document.getElementById("renderOngoing").addEventListener("click",(e)=>
+        {
+            e.preventDefault();
+            ongoingSet();
+            console.log("mamma");
+        })
     }
-})
-
-
-
-btnOngoing.addEventListener("click",function(e)
+}
+function ongoingSet()
 {
-    e.preventDefault();
-
-    const htmlToPut=`
+    ongoing=true;
+     const htmlToPut=`
     <div id="centerGIF"><center><img src="../img/wait2.gif"></center></div>
     `;
     console.log("hello");
@@ -104,15 +119,15 @@ btnOngoing.addEventListener("click",function(e)
     
     function buildProgram(runningContests)
     {
-        //dividerWrapperOngoing.style.display="none";
         divider.style.padding="0rem 0rem";
+        const head=`<div class="head">ONGOING CONTESTS</div>`;
         for(let i=0;i<runningContests.length;i++)
         {
 
-        let bg = "#302a77";
+        let bg = "#352f44";
         let color = "#f5f5f5";
         if (i % 2 == 1) {
-            bg = "#fdea2e";
+            bg = "#dbd8e3";
             color = "#000";
         }
        const endDate= (new Intl.DateTimeFormat(navigator.language,option).format(new Date(runningContests[i].end_time)));
@@ -128,7 +143,37 @@ btnOngoing.addEventListener("click",function(e)
         `;
            dividerWrapperOngoing.insertAdjacentHTML("beforeend",templateHTML);
         }
+        
         document.querySelector("#centerGIF").style.display="none";
+        console.log("hijj");
+        logo1.innerHTML="";
+        const img1=`<img src="../img/svg/cal.svg" alt="Home" style="height: 3rem;
+                    width: 3rem;" title="View Upcoming Contests" id="renderUpcoming">`;
+        console.log(img1);
+        logo1.insertAdjacentHTML("beforeend",img1);
+        console.log("hey!");
         divider.style.backgroundColor="#fff";
+        dividerWrapperOngoing.style.display="block";
+        document.getElementById("renderUpcoming").addEventListener("click",(e)=>
+        {
+            e.preventDefault();
+            upcomingSet();
+            console.log("mamma");
+        })
     }
+}
+
+btnOngoing.addEventListener("click",function(e)
+{
+    e.preventDefault();
+    ongoingSet();
+   
 })
+
+
+btnUpcoming.addEventListener("click",function(e)
+{
+     e.preventDefault();
+     upcomingSet();
+})
+
