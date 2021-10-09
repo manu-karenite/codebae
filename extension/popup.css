@@ -36,7 +36,8 @@ html {
     align-items: center;
     margin: 0rem 8rem; }
     .header-3pane__mid-pane .wrapper {
-      font-family: "Lobster", cursive;
+      font-family: "Heebo", sans-serif;
+      font-weight: bolder;
       letter-spacing: 0.3rem; }
   .header-3pane__right-pane {
     margin-right: 3rem; }
@@ -110,14 +111,14 @@ html {
       letter-spacing: 0.2rem;
       font-weight: bold; }
   .contestOngoing .register {
-    text-align: center; }
+    text-align: center;
+    margin-top: 1rem; }
     .contestOngoing .register a {
       text-decoration: none;
       font-size: 1.75rem;
       font-family: "Heebo", sans-serif;
       letter-spacing: 0.2rem;
       font-weight: bold;
-      text-decoration: underline;
       color: black; }
 
 .contestUpcoming {
@@ -143,12 +144,42 @@ html {
     text-align: right;
     padding-right: 2rem; }
   .contestUpcoming .register {
-    text-align: center; }
+    text-align: center;
+    margin-top: 1rem; }
     .contestUpcoming .register a {
       text-decoration: none;
       font-size: 1.75rem;
       font-family: "Heebo", sans-serif;
       letter-spacing: 0.2rem;
       font-weight: bold;
-      text-decoration: underline;
       color: black; }
+
+.ongoingZero {
+  background-color: #f5f5f5;
+  color: #352f44 !important;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem; }
+
+.ongoingOne {
+  background-color: #352f44;
+  color: #f5f5f5 !important;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem; }
+
+.runningZero {
+  background-color: #f5f5f5;
+  color: #062743 !important;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem; }
+
+.runningOne {
+  background-color: #062743;
+  color: #c4ffdd !important;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem; }
+
+#renderOngoing:hover {
+  cursor: pointer; }
+
+#renderUpcoming:hover {
+  cursor: pointer; }

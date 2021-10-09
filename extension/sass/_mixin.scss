@@ -37,6 +37,11 @@
   font-family: "Heebo", sans-serif;
   letter-spacing: 0.2rem;
   font-weight: bold;
-  text-decoration: underline;
+  //text-decoration: underline;
   color: black;
+}
+
+@mixin customButton {
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
 }
