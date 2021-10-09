@@ -85,8 +85,10 @@ function upcomingSet()
         document.getElementById("renderOngoing").addEventListener("click",(e)=>
         {
             e.preventDefault();
+            if(navigator.onLine==false)
+                alert("Network Not Established");
+            else
             ongoingSet();
-            console.log("mamma");
         })
     }
 }
@@ -158,8 +160,10 @@ function ongoingSet()
         document.getElementById("renderUpcoming").addEventListener("click",(e)=>
         {
             e.preventDefault();
-            upcomingSet();
-            console.log("mamma");
+            if(navigator.onLine==false)
+                alert("Network Not Established");
+            else
+            upcomingSet();   
         })
     }
 }
@@ -167,6 +171,9 @@ function ongoingSet()
 btnOngoing.addEventListener("click",function(e)
 {
     e.preventDefault();
+    if(navigator.onLine==false)
+        alert("Network Not Established");
+    else
     ongoingSet();
    
 })
@@ -175,6 +182,10 @@ btnOngoing.addEventListener("click",function(e)
 btnUpcoming.addEventListener("click",function(e)
 {
      e.preventDefault();
-     upcomingSet();
+    if(navigator.onLine==false)
+        alert("Network Not Established");
+    else
+         upcomingSet();
 })
 
+console.log(navigator.onLine);

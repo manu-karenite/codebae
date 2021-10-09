@@ -183,3 +183,14 @@ html {
 
 #renderUpcoming:hover {
   cursor: pointer; }
+
+.notification {
+  font-size: 1.5rem;
+  background-color: grey;
+  display: inline-block;
+  font-family: "PT Sans", sans-serif;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  z-index: 100; }
