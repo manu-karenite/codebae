@@ -11,8 +11,7 @@ const header=document.querySelector(".symbol-time");
 const logo1=document.querySelector(".icon1");
 const logo2=document.querySelector(".icon2");
 
-let upcoming = false;
-let ongoing=false;
+const title=document.querySelector(".wrapper");
 const option = 
     {
         day: 'numeric',
@@ -53,10 +52,12 @@ function upcomingSet()
         for(let i=0;i<upcomingContests.length;i++)
         {
         let bg = "#062743";
+        let className="runningZero";
         let color = "#f5f5f5";
         if (i % 2 == 1) {
             bg = "#c4ffdd";
             color = "#000";
+            className="runningOne"
         }
        const endDate= (new Intl.DateTimeFormat(navigator.language,option).format(new Date(upcomingContests[i].end_time)));
        const startDate= (new Intl.DateTimeFormat(navigator.language,option).format(new Date(upcomingContests[i].start_time)));
@@ -66,13 +67,13 @@ function upcomingSet()
             <div class="starts" style="color:${color}"><b>Starts:</b> ${startDate}</div>
             <div class="platform" style="color:${color}">${upcomingContests[i].site}</div>
             <div class="ends" style="color:${color}"><b>Ends:</b> ${endDate}</div>
-             <div class="register" ><a href="${upcomingContests[i].url}" target="_blank" style="color:${color}">Register</a></div>  
+             <div class="register" ><a href="${upcomingContests[i].url}" target="_blank" style="color:${color}" class="${className}
+             ">Register</a></div>  
         </div>
         `;
            dividerWrapperUpcoming.insertAdjacentHTML("beforeend",templateHTML);
         }
       document.querySelector("#centerGIFF").style.display="none";
-      console.log( document.querySelector("#centerGIF"));
       console.log("heyyyyyy");
         logo1.innerHTML="";
         
@@ -91,7 +92,6 @@ function upcomingSet()
 }
 function ongoingSet()
 {
-    ongoing=true;
      const htmlToPut=`
     <div id="centerGIF"><center><img src="../img/wait2.gif"></center></div>
     `;
@@ -123,12 +123,13 @@ function ongoingSet()
         const head=`<div class="head">ONGOING CONTESTS</div>`;
         for(let i=0;i<runningContests.length;i++)
         {
-
+        let className="ongoingZero";
         let bg = "#352f44";
         let color = "#f5f5f5";
         if (i % 2 == 1) {
             bg = "#dbd8e3";
             color = "#000";
+            className="ongoingOne"
         }
        const endDate= (new Intl.DateTimeFormat(navigator.language,option).format(new Date(runningContests[i].end_time)));
         const templateHTML=`
@@ -138,7 +139,7 @@ function ongoingSet()
             <div class="ends" style="color:${color}"><b>Ends:</b> ${endDate}</div>
             <div class="platform" style="color:${color}">${runningContests[i].site}</div>
             </div>
-            <div class="register"><a href="${runningContests[i].url}" target="_blank" style="color:${color}">Join</a></div>  
+            <div class="register"><a href="${runningContests[i].url}" target="_blank" style="color:${color}" class=${className}>Join</a></div>  
         </div>
         `;
            dividerWrapperOngoing.insertAdjacentHTML("beforeend",templateHTML);
