@@ -1,0 +1,32 @@
+.ongoingZero {
+  background-color: #f5f5f5;
+  color: #352f44 !important;
+  @include customButton;
+}
+.ongoingOne {
+  background-color: #352f44;
+  color: #f5f5f5 !important;
+  @include customButton;
+}
+
+.runningZero {
+  background-color: #f5f5f5;
+  color: #062743 !important;
+  @include customButton;
+}
+.runningOne {
+  background-color: #062743;
+  color: #c4ffdd !important;
+  @include customButton;
+}
+
+#renderOngoing {
+  &:hover {
+    cursor: pointer;
+  }
+}
+#renderUpcoming {
+  &:hover {
+    cursor: pointer;
+  }
+}
