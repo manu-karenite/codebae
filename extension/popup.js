@@ -27,7 +27,6 @@ function upcomingSet()
     const htmlToPut=`
     <div id="centerGIFF"><center><img src="../img/wait.gif"></center></div>
     `;
-     console.log("hello from upcoming");
      dividerWrapperOngoing.style.display="none";
      dividerWrapperUpcoming.innerHTML="";
      divider.style.backgroundColor="#120917";
@@ -42,8 +41,6 @@ function upcomingSet()
             return (new Date(element.start_time).getTime() > new Date().getTime());
 
         });
-         console.log(upcomingContests);
-        console.log("promise fetched and data restored");
         buildProgram1(upcomingContests);
     });
     function buildProgram1(upcomingContests)
@@ -74,7 +71,6 @@ function upcomingSet()
            dividerWrapperUpcoming.insertAdjacentHTML("beforeend",templateHTML);
         }
       document.querySelector("#centerGIFF").style.display="none";
-      console.log("heyyyyyy");
         logo1.innerHTML="";
         
         const img1=`<img src="../img/svg/clock1.svg" alt="Home" style="height: 3rem;
@@ -85,8 +81,10 @@ function upcomingSet()
         document.getElementById("renderOngoing").addEventListener("click",(e)=>
         {
             e.preventDefault();
+            if(navigator.onLine==false)
+                alert("Network Not Established");
+            else
             ongoingSet();
-            console.log("mamma");
         })
     }
 }
@@ -95,7 +93,6 @@ function ongoingSet()
      const htmlToPut=`
     <div id="centerGIF"><center><img src="../img/wait2.gif"></center></div>
     `;
-    console.log("hello");
     //step1: empty the upcoming tag or simply remove it
     dividerWrapperUpcoming.style.display="none";
     //step2: remove anything in there , by innerHTML
@@ -112,8 +109,6 @@ function ongoingSet()
             return element.status === "CODING";
         });
         runningContests.reverse();
-         console.log(runningContests);
-        console.log("promise fetched and data restored");
         buildProgram(runningContests);
     });
     
@@ -146,20 +141,19 @@ function ongoingSet()
         }
         
         document.querySelector("#centerGIF").style.display="none";
-        console.log("hijj");
         logo1.innerHTML="";
         const img1=`<img src="../img/svg/cal.svg" alt="Home" style="height: 3rem;
                     width: 3rem;" title="View Upcoming Contests" id="renderUpcoming">`;
-        console.log(img1);
         logo1.insertAdjacentHTML("beforeend",img1);
-        console.log("hey!");
         divider.style.backgroundColor="#fff";
         dividerWrapperOngoing.style.display="block";
         document.getElementById("renderUpcoming").addEventListener("click",(e)=>
         {
             e.preventDefault();
-            upcomingSet();
-            console.log("mamma");
+            if(navigator.onLine==false)
+                alert("Network Not Established");
+            else
+            upcomingSet();   
         })
     }
 }
@@ -167,6 +161,9 @@ function ongoingSet()
 btnOngoing.addEventListener("click",function(e)
 {
     e.preventDefault();
+    if(navigator.onLine==false)
+        alert("Network Not Established");
+    else
     ongoingSet();
    
 })
@@ -174,7 +171,9 @@ btnOngoing.addEventListener("click",function(e)
 
 btnUpcoming.addEventListener("click",function(e)
 {
-     e.preventDefault();
-     upcomingSet();
+    e.preventDefault();
+    if(navigator.onLine==false)
+        alert("Network Not Established");
+    else
+         upcomingSet();
 })
-
