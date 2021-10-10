@@ -39,4 +39,4 @@
   - npm run **dev**
 
 ## Live Here : [Codebae](https://codebae.vercel.app/)
-## Firefox Extension : [Codebae](https://addons.mozilla.org/en-US/firefox/addon/codebae/)
+## Firefox Extension : [Codebae - Extension](https://addons.mozilla.org/en-US/firefox/addon/codebae/)
